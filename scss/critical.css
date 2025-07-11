@@ -175,8 +175,8 @@
         background: transparent !important;
         color: theme('colors.primary.DEFAULT');
         border: none;
-        height: 30px;
-        width: 30px;
+        height: 24px;
+        width: 24px;
         display: flex;
         align-items: center;
         justify-items: center;
@@ -191,8 +191,9 @@
             
     .header nav.js-main-nav ul li .dropdown-toggle:after {
         display: flex;
-        content: '▾';
-        font-size: 1.5rem;
+        font-family: 'FontAwesome', sans-serif;
+        content: '\f107';
+        font-size: 1.25rem;
         align-items: center;
         justify-content: center;
         transition: transform 300ms ease-in-out;

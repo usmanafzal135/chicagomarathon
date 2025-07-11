@@ -62,7 +62,7 @@ register_nav_menus( array(
         if ($depth > 0) {
             $link_classes = 'menu-link pl-1 py-half lg:p-0.75 lg:py-half flex lg:hover:bg-gray-200';
         } else {
-            $link_classes = 'menu-link py-half lg:p-0.75 flex lg:text-lg';
+            $link_classes = 'menu-link py-half lg:p-0.75 flex lg:text-lg text-secondary font-semibold';
         }
 
         $item_output .= '<a' . $attributes . ' class="' . $link_classes . '">';

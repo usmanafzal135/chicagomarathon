@@ -12,11 +12,24 @@
 /* Theme CSS Defaults */
 :root,
 [data-color-theme='default']  {
-    --color-primary: 0 128 102;
+    --color-primary: 0 82 194;
     --color-primary-light: 0 142 111;
     --color-primary-dark: 0 112 87;
 
-    --color-secondary: 17 17 17;
+    --color-secondary: 1 33 105;
     --color-secondary-light: 85 85 85;
     --color-secondary-dark: 0 0 0;
+
+    --color-acent1: 245 250 255;
+    --color-acent2: 219 234 255;
+    
+    --color-lightgrey: 249 249 249;
+    --color-upper-lightgrey: 230 230 230;
+    --color-medium-grey: 183 183 183;
+    --color-grey: 82 82 82;
+
+    --color-warning: 255 174 0;
+    --color-danger: 173 38 38;
+    --color-success: 58 219 117;
+
 }

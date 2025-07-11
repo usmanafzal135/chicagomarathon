@@ -179,12 +179,12 @@ module.exports = {
             '3xl': '1800px', // Wide width
         },
         fontFamily: {
-            sans: ['Roboto', 'sans-serif'],
+            sans: ['Poppins', 'sans-serif'],
             serif: ['Merriweather', 'serif'],
         },
         fontSize: {
-            xs: ['0.75rem', '1rem'],
-            sm: ['0.875rem', '1.25rem'],
+            xs: ['0.687rem', '1rem'],
+            sm: ['0.812rem', '1.25rem'],
             base: ['1rem', '1.5rem'], // Paragraph and H6 Mobile
             lg: ['1.125rem', '1.75rem'],
             xl: ['1.25rem', '1.75rem'],
@@ -232,6 +232,15 @@ module.exports = {
                     DEFAULT: 'rgb(var(--color-secondary) / <alpha-value>)',
                     dark: 'rgb(var(--color-secondary-dark) / <alpha-value>)',
                 },
+                acent1: 'rgb(var(--color-acent1) / <alpha-value>)',
+                acent2: 'rgb(var(--color-acent2) / <alpha-value>)',
+                lightgrey: 'rgb(var(--color-lightgrey) / <alpha-value>)',
+                upper_lightgrey: 'rgb(var(--upper-lightgrey) / <alpha-value>)',
+                medium_lightgrey: 'rgb(var(--medium-lightgrey) / <alpha-value>)',
+                grey: 'rgb(var(--color-grey) / <alpha-value>)',
+                warning: 'rgb(var(--color-warning) / <alpha-value>)',
+                danger: 'rgb(var(--color-danger) / <alpha-value>)',
+                success: 'rgb(var(--color-success) / <alpha-value>)',
                 transparent: 'transparent',
             },
             borderRadius: {
@@ -244,40 +253,78 @@ module.exports = {
                             marginTop: theme('spacing.half'),
                             marginBottom: theme('spacing.1'),
                         },
+                        // Old FontSizes
+                        // 'h1, .h1': {
+                        //     fontSize: theme('fontSize.fluid-h1'),
+                        //     '@screen xl': {
+                        //         fontSize: theme('fontSize.5xl[0]'),
+                        //     },
+                        // },
+                        // 'h2, .h2': {
+                        //     fontSize: theme('fontSize.fluid-h2'),
+                        //     '@screen xl': {
+                        //         fontSize: theme('fontSize.4xl[0]'),
+                        //     },
+                        // },
+                        // 'h3, .h3': {
+                        //     fontSize: theme('fontSize.fluid-h3'),
+                        //     '@screen xl': {
+                        //         fontSize: theme('fontSize.3xl[0]'),
+                        //     },
+                        // },
+                        // 'h4, .h4': {
+                        //     fontSize: theme('fontSize.fluid-h4'),
+                        //     '@screen xl': {
+                        //         fontSize: theme('fontSize.2xl[0]'),
+                        //     },
+                        // },
+                        // 'h5, .h5': {
+                        //     fontSize: theme('fontSize.lg[0]'),
+                        //     '@screen xl': {
+                        //         fontSize: theme('fontSize.xl[0]'),
+                        //     },
+                        // },
+                        // 'h6, .h6': {
+                        //     fontSize: theme('fontSize.base[0]'),
+                        //     '@screen xl': {
+                        //         fontSize: theme('fontSize.lg[0]'),
+                        //     },
+                        // },
+
                         'h1, .h1': {
-                            fontSize: theme('fontSize.fluid-h1'),
+                            fontSize: '48px',
                             '@screen xl': {
-                                fontSize: theme('fontSize.5xl[0]'),
+                                fontSize: '28px',
                             },
                         },
                         'h2, .h2': {
-                            fontSize: theme('fontSize.fluid-h2'),
+                            fontSize: '32px',
                             '@screen xl': {
-                                fontSize: theme('fontSize.4xl[0]'),
+                                fontSize: '24px',
                             },
                         },
                         'h3, .h3': {
-                            fontSize: theme('fontSize.fluid-h3'),
+                            fontSize: '28px',
                             '@screen xl': {
-                                fontSize: theme('fontSize.3xl[0]'),
+                                fontSize: '23px',
                             },
                         },
                         'h4, .h4': {
-                            fontSize: theme('fontSize.fluid-h4'),
+                            fontSize: '24',
                             '@screen xl': {
-                                fontSize: theme('fontSize.2xl[0]'),
+                                fontSize: '21px',
                             },
                         },
                         'h5, .h5': {
-                            fontSize: theme('fontSize.lg[0]'),
+                            fontSize: '20px',
                             '@screen xl': {
-                                fontSize: theme('fontSize.xl[0]'),
+                                fontSize: '18px',
                             },
                         },
                         'h6, .h6': {
-                            fontSize: theme('fontSize.base[0]'),
+                            fontSize: '18px',
                             '@screen xl': {
-                                fontSize: theme('fontSize.lg[0]'),
+                                fontSize: '16px',
                             },
                         },
                     },

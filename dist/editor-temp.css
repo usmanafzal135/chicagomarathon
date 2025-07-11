@@ -43,7 +43,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: Roboto, sans-serif;
+  font-family: Poppins, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -660,81 +660,79 @@ h1,
 
 h1,
     .h1 {
-  font-size: calc(1.375rem + 1.5vw);
+  /* @apply text-fluid-h1 xl:text-5xl; */
+  font-size: 28px;
 }
 
 @media (min-width: 1200px) {
   h1,
     .h1 {
-    font-size: 2.5rem;
-    line-height: 1.1;
+    font-size: 48px;
   }
 }
 
 h2,
     .h2 {
-  font-size: calc(1.325rem + 0.9vw);
+  /* @apply text-fluid-h2 xl:text-4xl; */
+  font-size: 24px;
 }
 
 @media (min-width: 1200px) {
   h2,
     .h2 {
-    font-size: 2rem;
-    line-height: 2.75rem;
+    font-size: 32px;
   }
 }
 
 h3,
     .h3 {
-  font-size: calc(1.3rem + 0.6vw);
+  /* @apply text-fluid-h3 xl:text-3xl; */
+  font-size: 23px;
 }
 
 @media (min-width: 1200px) {
   h3,
     .h3 {
-    font-size: 1.78rem;
-    line-height: 2.25rem;
+    font-size: 28px;
   }
 }
 
 h4,
     .h4 {
-  font-size: calc(1.275rem + 0.3vw);
+  /* @apply text-fluid-h4 xl:text-2xl; */
+  font-size: 21px;
 }
 
 @media (min-width: 1200px) {
   h4,
     .h4 {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 24px;
   }
 }
 
 h5,
     .h5 {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  /* @apply text-lg xl:text-xl; */
+  font-size: 18px;
 }
 
 @media (min-width: 1200px) {
   h5,
     .h5 {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+    font-size: 20px;
   }
 }
 
 h6,
     .h6 {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  /* @apply text-base xl:text-lg; */
+  font-size: 16px;
 }
 
 @media (min-width: 1200px) {
   h6,
     .h6 {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+    font-size: 18px;
   }
 }
 
@@ -1376,62 +1374,62 @@ ol ol ol li {
 }
 
 .typography :where(h1, .h1):not(:where([class~="not-typography"] *)) {
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: 48px;
 }
 
 @media (min-width: 1200px) {
   .typography :where(h1, .h1):not(:where([class~="not-typography"] *)) {
-    font-size: 2.5rem;
+    font-size: 28px;
   }
 }
 
 .typography :where(h2, .h2):not(:where([class~="not-typography"] *)) {
-  font-size: calc(1.325rem + 0.9vw);
+  font-size: 32px;
 }
 
 @media (min-width: 1200px) {
   .typography :where(h2, .h2):not(:where([class~="not-typography"] *)) {
-    font-size: 2rem;
+    font-size: 24px;
   }
 }
 
 .typography :where(h3, .h3):not(:where([class~="not-typography"] *)) {
-  font-size: calc(1.3rem + 0.6vw);
+  font-size: 28px;
 }
 
 @media (min-width: 1200px) {
   .typography :where(h3, .h3):not(:where([class~="not-typography"] *)) {
-    font-size: 1.78rem;
+    font-size: 23px;
   }
 }
 
 .typography :where(h4, .h4):not(:where([class~="not-typography"] *)) {
-  font-size: calc(1.275rem + 0.3vw);
+  font-size: 24;
 }
 
 @media (min-width: 1200px) {
   .typography :where(h4, .h4):not(:where([class~="not-typography"] *)) {
-    font-size: 1.5rem;
+    font-size: 21px;
   }
 }
 
 .typography :where(h5, .h5):not(:where([class~="not-typography"] *)) {
-  font-size: 1.125rem;
+  font-size: 20px;
 }
 
 @media (min-width: 1200px) {
   .typography :where(h5, .h5):not(:where([class~="not-typography"] *)) {
-    font-size: 1.25rem;
+    font-size: 18px;
   }
 }
 
 .typography :where(h6, .h6):not(:where([class~="not-typography"] *)) {
-  font-size: 1rem;
+  font-size: 18px;
 }
 
 @media (min-width: 1200px) {
   .typography :where(h6, .h6):not(:where([class~="not-typography"] *)) {
-    font-size: 1.125rem;
+    font-size: 16px;
   }
 }
 
@@ -1493,7 +1491,7 @@ a .alignright {
 
 .wp-caption-text {
   margin: 0;
-  font-size: 0.875rem;
+  font-size: 0.812rem;
   line-height: 1.25rem;
   font-style: italic;
 }
@@ -1588,7 +1586,7 @@ a .alignright {
 
 .wp-block-table figcaption {
   padding: 1rem;
-  font-size: 0.875rem;
+  font-size: 0.812rem;
   line-height: 1.25rem;
 }
 
@@ -1915,7 +1913,7 @@ button.large,
 
 button.small,
     .button.small {
-  font-size: 0.875rem;
+  font-size: 0.812rem;
   line-height: 1.25rem;
 }
 
@@ -2528,16 +2526,16 @@ address {
   top: 0;
 }
 
+.top-1 {
+  top: 1rem;
+}
+
 .top-1\/2 {
   top: 50%;
 }
 
 .top-\[45px\] {
   top: 45px;
-}
-
-.top-auto {
-  top: auto;
 }
 
 .top-half {
@@ -2648,8 +2646,8 @@ address {
   margin-right: 4px;
 }
 
-.mr-half {
-  margin-right: 0.5rem;
+.mr-qtr {
+  margin-right: 0.25rem;
 }
 
 .mt-0 {
@@ -2796,6 +2794,10 @@ address {
   width: 1.5em;
 }
 
+.w-\[160px\] {
+  width: 160px;
+}
+
 .w-\[250px\] {
   width: 250px;
 }
@@ -2827,6 +2829,10 @@ address {
 
 .max-w-\[600px\] {
   max-width: 600px;
+}
+
+.max-w-\[700px\] {
+  max-width: 700px;
 }
 
 .max-w-\[80px\] {
@@ -2973,10 +2979,10 @@ address {
   row-gap: 3rem;
 }
 
-.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+.space-x-1 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
-  margin-right: calc(2rem * var(--tw-space-x-reverse));
-  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .self-center {
@@ -3019,6 +3025,10 @@ address {
 
 .rounded-md {
   border-radius: 0.375rem;
+}
+
+.rounded-none {
+  border-radius: 0px;
 }
 
 .border {
@@ -3102,6 +3112,11 @@ address {
   background-color: transparent !important;
 }
 
+.bg-acent1 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--color-acent1) / var(--tw-bg-opacity));
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -3114,6 +3129,11 @@ address {
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.bg-lightgrey {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--color-lightgrey) / var(--tw-bg-opacity));
 }
 
 .bg-primary {
@@ -3188,10 +3208,6 @@ address {
   padding: 0.5rem;
 }
 
-.p-qtr {
-  padding: 0.25rem;
-}
-
 .px-1 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -3200,6 +3216,11 @@ address {
 .px-1\.5 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .px-qtr {
@@ -3259,10 +3280,6 @@ address {
   padding-left: 1rem;
 }
 
-.pl-2 {
-  padding-left: 2rem;
-}
-
 .pl-\[0\.55rem\] {
   padding-left: 0.55rem;
 }
@@ -3312,7 +3329,7 @@ address {
 }
 
 .\!text-xs {
-  font-size: 0.75rem !important;
+  font-size: 0.687rem !important;
   line-height: 1rem !important;
 }
 
@@ -3326,6 +3343,10 @@ address {
   line-height: 2.25rem;
 }
 
+.text-\[22px\] {
+  font-size: 22px;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -3337,7 +3358,7 @@ address {
 }
 
 .text-sm {
-  font-size: 0.875rem;
+  font-size: 0.812rem;
   line-height: 1.25rem;
 }
 
@@ -3347,12 +3368,20 @@ address {
 }
 
 .text-xs {
-  font-size: 0.75rem;
+  font-size: 0.687rem;
   line-height: 1rem;
 }
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
@@ -3664,23 +3693,23 @@ address {
     letter-spacing: -0.025em;
     --tw-text-opacity: 1;
     color: rgb(17 24 39 / var(--tw-text-opacity));
-    font-size: calc(1.375rem + 1.5vw);
+    /* @apply text-fluid-h1 xl:text-5xl; */
+    font-size: 28px;
   }
 
   @media (min-width: 1200px) {
     .md\:h1 {
-      font-size: 2.5rem;
-      line-height: 1.1;
+      font-size: 48px;
     }
   }
 
   .typography :where(h1,.md\:h1):not(:where([class~="not-typography"] *)) {
-    font-size: calc(1.375rem + 1.5vw);
+    font-size: 48px;
   }
 
   @media (min-width: 1200px) {
     .typography :where(h1,.md\:h1):not(:where([class~="not-typography"] *)) {
-      font-size: 2.5rem;
+      font-size: 28px;
     }
   }
 }
@@ -3734,9 +3763,19 @@ address {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:bg-acent1:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--color-acent1) / var(--tw-bg-opacity));
+}
+
 .hover\:bg-gray-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-primary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--color-primary) / var(--tw-bg-opacity));
 }
 
 .hover\:bg-transparent:hover {
@@ -3746,10 +3785,6 @@ address {
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.hover\:fill-primary-dark:hover {
-  fill: rgb(var(--color-primary-dark) / 1);
 }
 
 .hover\:text-primary:hover {
@@ -3769,6 +3804,12 @@ address {
 
 .hover\:underline:hover {
   text-decoration-line: underline;
+}
+
+.hover\:shadow-none:hover {
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .hover\:shadow-transparent:hover {
@@ -3849,9 +3890,18 @@ address {
 }
 
 @media (min-width: 640px) {
+  .sm\:w-\[250px\] {
+    width: 250px;
+  }
+
   .sm\:gap-x-1 {
     -moz-column-gap: 1rem;
          column-gap: 1rem;
+  }
+
+  .sm\:py-half {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 }
 
@@ -4032,6 +4082,10 @@ address {
     width: 120px;
   }
 
+  .lg\:w-\[310px\] {
+    width: 310px;
+  }
+
   .lg\:w-\[80px\] {
     width: 80px;
   }
@@ -4183,12 +4237,20 @@ address {
     padding-bottom: 2rem;
   }
 
+  .lg\:pl-2 {
+    padding-left: 2rem;
+  }
+
   .lg\:pl-\[35\%\] {
     padding-left: 35%;
   }
 
   .lg\:pr-1 {
     padding-right: 1rem;
+  }
+
+  .lg\:pr-3 {
+    padding-right: 3rem;
   }
 
   .lg\:pr-\[35\%\] {
@@ -4232,6 +4294,11 @@ address {
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-sm {
+    font-size: 0.812rem;
+    line-height: 1.25rem;
   }
 
   .lg\:text-white {
