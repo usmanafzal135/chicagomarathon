@@ -1,0 +1,22 @@
+{
+    "name": "acf/separator",
+    "title": "Separator",
+    "description": "Separator Block.",
+    "category": "design",
+    "icon": "minus",
+    "keywords": ["separator", "divider"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "separator.php"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true
+    },
+    "styles": [
+        { "name": "default", "label": "Default", "isDefault": true },
+        { "name": "narrow", "label": "Narrow" },
+        { "name": "wide", "label": "Wide" },
+        { "name": "full", "label": "Full" }
+    ]
+}

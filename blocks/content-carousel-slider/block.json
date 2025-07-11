@@ -1,0 +1,21 @@
+{
+    "name": "acf/content-carousel-slider",
+    "title": "Content Carousel/Slider",
+    "description": "A Content Carousel/Slider Block.",
+    "category": "design",
+    "icon": "images-alt2",
+    "keywords": ["carousel", "slider", "content", "items"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "content-carousel-slider.php"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true
+    },
+    "styles": [
+        { "name": "default", "label": "Default", "isDefault": true },
+        { "name": "wide", "label": "Wide" },
+        { "name": "full", "label": "Full" }
+    ]
+}

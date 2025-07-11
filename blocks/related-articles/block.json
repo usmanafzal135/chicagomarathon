@@ -1,0 +1,21 @@
+{
+    "name": "acf/related-articles",
+    "title": "Related Articles",
+    "description": "Related Articles Block.",
+    "category": "design",
+    "icon": "admin-post",
+    "keywords": ["Related Articles", "Related Posts"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "related-articles.php"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true
+    },
+    "styles": [
+        { "name": "default", "label": "Default", "isDefault": true },
+        { "name": "wide", "label": "Wide" },
+        { "name": "full", "label": "Full" }
+    ]
+}

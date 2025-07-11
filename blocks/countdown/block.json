@@ -1,0 +1,22 @@
+{
+    "name": "acf/countdown",
+    "title": "Countdown",
+    "description": "A Countdown Block.",
+    "category": "text",
+    "icon": "clock",
+    "keywords": ["Countdown", "Timer"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "countdown.php"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true
+    },
+    "styles": [
+        { "name": "default", "label": "Default", "isDefault": true },
+        { "name": "narrow", "label": "Narrow" },
+        { "name": "wide", "label": "Wide" },
+        { "name": "full", "label": "Full" }
+    ]
+}

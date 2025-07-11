@@ -1,0 +1,197 @@
+{
+    "key": "group_66a8537985385",
+    "title": "Block: Toggle Content",
+    "fields": [
+        {
+            "key": "field_66b0d568a3f40",
+            "label": "Content",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_66a853c5b4184",
+            "label": "Content",
+            "name": "content",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_66b0d584a3f41",
+            "label": "Options",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_66b0d4213d6a9",
+            "label": "Heading",
+            "name": "heading",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Optional: displays as a heading above the toggle content.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66a91146a0de4",
+            "label": "Display as Link?",
+            "name": "display_as_link",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "When selected, the toggle selector will be a link as opposed to a button",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_66a91017a0de3",
+            "label": "Use Custom Button\/Link Text",
+            "name": "use_custom_button_or_link_text",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "When selected, enter custom button\/link show\/hide text. Otherwise, defaults to \"Show Content\" when closed, and \"Hide Content\" when opened",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_66a85379b4183",
+            "label": "Custom Button\/Link Text - Show",
+            "name": "custom_button_link_text_show",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Defaults to \"Show Content\" if no value entered.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66a91017a0de3",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66a917f69b65d",
+            "label": "Custom Button\/Link Text - Hide",
+            "name": "custom_button_link_text_hide",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Defaults to \"Hide Content\" if no value entered.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66a91017a0de3",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/toggle-content"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1722865098
+}

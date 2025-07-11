@@ -1,0 +1,41 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 2020
+    },
+    "extends": "airbnb",
+    "env": {
+        "browser": true,
+        "jquery": true
+    },
+    "globals": {
+        "Foundation": true
+    },
+    "rules": {
+        "block-scoped-var": "off",
+        "indent": [
+            "error",
+            4
+        ],
+        "no-plusplus": "off",
+        "no-restricted-syntax": "off",
+        "padded-blocks": [
+            "error",
+            {
+                "blocks": "always",
+                "switches": "always",
+                "classes": "always"
+            }
+        ],
+        "prefer-arrow-callback": "off",
+        "prefer-destructuring": "off",
+        "prefer-template": "off",
+        "space-before-function-paren": [
+            "error",
+            "never"
+        ],
+        "space-infix-ops": "error",
+        "vars-on-top": "off",
+        "linebreak-style": 0,
+        "import/extensions": "off"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "name": "acf/file-download",
+    "title": "File Download",
+    "description": "A File Download Block.",
+    "category": "text",
+    "icon": "download",
+    "keywords": ["File Download", "file", "download"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "file-download.php"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true
+    },
+    "styles": [
+        { "name": "default", "label": "Default", "isDefault": true },
+        { "name": "wide", "label": "Wide" },
+        { "name": "narrow", "label": "Narrow" },
+        { "name": "full", "label": "Full" }
+    ]
+}

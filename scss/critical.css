@@ -1,0 +1,302 @@
+@config '../tailwind.critical.config.js';
+
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+
+@layer base {
+    html,
+    *,
+    *:before,
+    *:after  { 
+        @apply box-border;
+    }
+
+    /* Prevents hidden alpine elements from blipping on load */
+    [x-cloak] { 
+        @apply !hidden;
+    }
+	
+    input[type='text'],
+    input[type='password'],
+    input[type='email'],
+    input[type='number'],
+    input[type='url'],
+    input[type='date'],
+    input[type='datetime-local'],
+    input[type='month'],
+    input[type='week'],
+    input[type='time'],
+    input[type='search'],
+    input[type='tel'],
+    select,
+    select[multiple],
+    textarea {
+        @apply border-slate-400 rounded w-full box-border;
+    }
+
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4,
+    h5,
+    .h5,
+    h6,
+    .h6 {
+        @apply leading-tight font-bold mt-0 mb-1 tracking-tight text-gray-900;
+    }
+
+    h1,
+    .h1 {
+        @apply text-fluid-h1 xl:text-5xl;
+    }
+        
+    h2,
+    .h2 {
+        @apply text-fluid-h2 xl:text-4xl;
+    }
+
+    h3,
+    .h3 {
+        @apply text-fluid-h3 xl:text-3xl;
+    }
+
+    h4,
+    .h4 {
+        @apply text-fluid-h4 xl:text-2xl;
+    }
+
+    h5,
+    .h5 {
+        @apply text-lg xl:text-xl;
+    }
+
+    h6,
+    .h6 {
+        @apply text-base xl:text-lg;
+    }
+
+    p {
+        @apply text-base mb-1;
+    }
+
+
+    .lead {
+        @apply !text-lg lg:!text-xl;
+    }
+
+    ol ol li {
+        @apply list-[lower-alpha];
+    }
+
+    ol ol ol li {
+        @apply list-[lower-roman];
+    }
+
+    .tagline {
+        @apply text-primary tracking-widest uppercase font-semibold;
+    }
+}
+
+@layer components {
+    button, 
+    .button {
+        @apply no-underline border border-primary text-white text-base bg-primary hover:bg-primary-dark font-bold py-half px-1 mb-1 rounded inline-block hover:shadow-lg active:shadow-lg;
+    }
+
+    .link-button {
+        @apply px-0 bg-transparent font-bold text-primary hover:text-primary-dark underline;
+    }
+
+    .splide { 
+        @apply invisible relative;
+    }
+    
+    .splide__slide { 
+        @apply w-full list-item;
+    }
+    
+    .splide__list { 
+        @apply flex;
+    }
+
+    .splide__pagination {
+        @apply flex mx-auto mt-1 mb-1.5 text-center items-center justify-center flex-wrap;
+    }
+
+    button.splide__video__play {
+        @apply bg-white !h-[2.5rem] !w-[2.5rem] xl:!w-[60px] xl:!h-[60px] mb-0 opacity-100 hover:!bg-white;
+    }
+
+    .ui-loader {
+        @apply overflow-hidden bg-gray-200;
+    }
+
+    .hide {
+        @apply !hidden;
+    }
+
+    .show {
+        @apply !flex;
+    }
+
+    .header nav.js-main-nav {
+        grid-area: menu;
+    }
+    
+    .header nav.js-main-nav ul {
+        display: none;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        min-width: max-content;
+    }
+    
+    .header nav.js-main-nav ul li {
+        position: relative;
+        padding: 0;
+        min-width: max-content;
+    }
+    
+    .header nav.js-main-nav ul li a {
+        display: flex;
+        align-items: center;
+        flex: 1 1;
+    }
+    
+    .header nav.js-main-nav ul li .dropdown-toggle {
+        background: transparent !important;
+        color: theme('colors.primary.DEFAULT');
+        border: none;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        place-self: center;
+        padding: 0;
+    }
+    
+    .header nav.js-main-nav ul li .dropdown-toggle:hover {
+        box-shadow: none;
+    }
+            
+    .header nav.js-main-nav ul li .dropdown-toggle:after {
+        display: flex;
+        content: '▾';
+        font-size: 1.5rem;
+        align-items: center;
+        justify-content: center;
+        transition: transform 300ms ease-in-out;
+    }
+            
+    .header nav.js-main-nav ul li .dropdown-toggle[aria-expanded='true']:after {
+        transform: rotate(-180deg);
+    }
+    
+    .header nav.js-main-nav.top-link-disclosure-menu li {
+        display: flex;
+        flex-wrap: wrap;
+    }
+            
+    .header nav.js-main-nav.top-link-disclosure-menu li button.dropdown-toggle {
+        flex-shrink: 1;
+        flex-grow: 0;
+    }
+    
+    .header nav.js-main-nav .hide {
+        display: none !important;
+    }
+        
+    .header nav.js-main-nav .show {
+        display: flex !important;
+        opacity: 1;
+    }
+        
+    .header nav.js-main-nav .transitioning {
+        display: flex !important;
+        opacity: 0;
+    }
+
+    .header nav.js-main-nav .hide,
+    .header nav.js-main-nav .main-menu .dropdown-menu { /* remove layout shift */
+        @apply hidden;
+    }
+}
+
+@layer utilities {
+    .absolute-center { /* Absolute center an element, vertically and horizontally. */
+        @apply absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4;
+    }
+
+    .vertical-center { /* Vertically center an element. You can position the element offset by adding positioning TW classes ".left-[30%]" or ".right-[40px]" as an example. */
+        @apply absolute top-2/4 -translate-y-2/4;
+    }
+
+    .with-overlay { /* Adds a dark overlay to an element. You can change the overlay color by adding TW classes to the element. E.g. class="with-overlay before:bg-primary before:bg-opacity-50" */
+        @apply relative before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-opacity-50 before:bg-black before:transition-all duration-300;
+    }
+
+    .absolute-cover { /* Adds a transparent overlay to an element. Useful for hidden links and buttons. */
+        @apply absolute left-0 top-0 w-full h-full;
+    }
+
+    .clearfix {
+        @apply clear-both after:clear-both after:content-[''] after:table;
+    }
+    
+    /* CSS Animation Classes */
+    .js-hidden, .lozad {
+        @apply opacity-0 pointer-events-none transition-all duration-[0.8s] ease-in-out will-change-auto;
+    }
+    
+    .js-stagger {
+        @apply opacity-0 -translate-y-0.75 transition-all duration-[0.8s] ease-in-out will-change-auto;
+    }
+    
+    .js-staggered {
+        @apply translate-y-0 opacity-100;
+    }
+    
+    .js-animate, .js-loaded {
+        @apply opacity-100 pointer-events-auto;
+    }
+    
+    /* Specific CSS Animation Classes */
+    .js-hidden.hero picture {
+        @apply opacity-0 scale-[1.05] transition-all duration-[2s] ease-in-out;
+    }
+
+    .js-hidden.js-animate.hero picture {
+        @apply opacity-100 scale-100;
+    }
+
+    .is-style-regular {
+        @apply container max-w-screen-lg;
+    }
+
+    .is-style-narrow {
+        @apply container max-w-screen-md;
+    }
+
+    .is-style-wide {
+        @apply max-w-[75%];
+    }
+
+    .is-style-full {
+        @apply max-w-full;
+    }
+
+    .wp-block-table td,
+    .wp-block-table th {
+        @apply p-1;
+    }
+}

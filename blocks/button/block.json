@@ -1,0 +1,22 @@
+{
+    "name": "acf/button",
+    "title": "Button",
+    "description": "A Button Block.",
+    "category": "text",
+    "icon": "button",
+    "keywords": ["Button"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "button.php"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true
+    },
+    "styles": [
+        { "name": "default", "label": "Default", "isDefault": true },
+        { "name": "narrow", "label": "Narrow" },
+        { "name": "wide", "label": "Wide" },
+        { "name": "full", "label": "Full" }
+    ]
+}

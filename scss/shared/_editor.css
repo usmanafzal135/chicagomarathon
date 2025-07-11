@@ -1,0 +1,182 @@
+@layer components {
+    /* ALIGNMENT CLASSES */
+    .typography .left {
+        @apply text-left;
+    }
+
+    .typography .center {
+        @apply text-center;
+    }
+
+    .typography .right {
+        @apply text-right;
+    }
+
+    /* IMAGES & EMBEDS */
+    .typography .caption {
+        @apply font-bold;
+    }
+
+    .typography .embed .caption {
+        @apply text-left my-half;
+    }
+
+    .typography .embed.left,
+    .typography .embed.right,
+    .typography .embed.leftAlone,
+    .typography .embed.rightAlone,
+    .typography .embed.center {
+        @apply w-full max-w-full float-none mx-auto mb-2; 
+    }
+
+    .typography .embed.rightAlone iframe, 
+    .typography .embed.leftAlone iframe,
+    .typography .embed.right iframe, 
+    .typography .embed.left iframe,
+    .typography .embed.center iframe {
+        @apply w-full aspect-video h-auto;
+    }
+
+    .typography img.rightAlone,
+    .typography img.leftAlone,
+    .typography .embed.rightAlone,
+    .typography .embed.leftAlone {
+        @apply w-full text-center;
+    }
+
+    .typography .embed.left {
+        @apply md:float-left md:max-w-[50%] md:mt-half md:mr-2 md:mb-2 md:ml-0;
+    }
+
+    .typography .embed.right {
+        @apply md:float-right md:max-w-[50%] md:mt-half md:mr-0 md:mb-2 md:ml-2;
+    }
+
+    .typography img.left {
+        @apply float-left max-w-[50%] mt-half mr-2 mb-2 ml-0;
+    }
+
+    .typography img.right {
+        @apply float-right max-w-[50%] mt-half mr-0 mb-2 ml-2;
+    }
+
+    .typography img.leftAlone,
+    .typography .embed.leftAlone {
+        @apply md:w-auto md:float-left md:mr-[100%] md:mb-2 md:clear-both;
+    }
+
+    .typography img.rightAlone,
+    .typography .embed.rightAlone {
+        @apply md:w-auto md:float-right md:ml-[100%] md:mb-2 md:clear-both;
+    }
+
+    .typography img.center {
+        @apply w-full max-w-[600px] lg:float-none mx-auto lg:block lg:mb-1 lg:clear-both;
+    }
+
+    .typography .captionImage {
+        @apply w-full mt-half;
+    }
+
+    .typography .captionImage img {
+        @apply w-full max-w-full mb-0 md:m-0;
+    }
+
+    .typography .captionImage p {
+        @apply clear-both my-half mx-0 inline-block;
+    }
+
+    .typography .captionImage.rightAlone {
+        @apply max-w-full mt-0 mx-auto mb-2 float-right ml-[100%];
+    }
+
+    .typography .captionImage.leftAlone {
+        @apply max-w-full float-none mt-0 mr-2 mb-2 ml-0;
+    }
+
+    .typography .captionImage.left {
+        @apply mt-0 mx-auto mb-1 float-none w-full max-w-full md:w-auto md:max-w-none md:float-left md:mt-half md:mr-2 md:mb-2 md:ml-0;
+    }
+
+    .typography .captionImage.right {
+        @apply mt-0 mx-auto mb-1 float-none w-full max-w-full md:w-auto md:max-w-none md:float-right md:mt-half md:mr-0 md:mb-2 md:ml-2;
+    }
+
+    .typography .captionImage.right img.right {
+        @apply m-0 mt-half;
+    }
+
+    .typography .captionImage.left[style],
+    .typography .captionImage.right[style] {
+        @apply max-w-[50%] md:max-w-none ;
+    }
+
+    .typography .captionImage.left[style] {
+        @apply float-left mt-half mr-2 mb-1 ml-0;
+    }
+
+    .typography .captionImage.right[style] {
+        @apply float-right mt-half mr-0 mb-1 ml-2;
+    }
+
+    .typography .captionImage.left img,
+    .typography .captionImage.right img {
+        @apply float-none max-w-none w-full;
+    }
+
+    .typography .captionImage.right p {
+        @apply text-left block;
+    }
+
+    .typography .captionImage.center {
+        @apply max-w-full mt-0 mx-auto mb-2;
+    }
+
+    /* TABLES */
+    .typography table {
+        @apply table-auto;
+    }
+
+    .typography table tr th {
+        @apply pl-half text-lg py-half;
+    }
+
+    .typography table tr th:first-child {
+        @apply pl-0;
+    }
+
+    .typography .lead {
+        @apply !text-lg lg:!text-xl;
+    }
+
+    /* BLOCKQUOTES */
+    .typography blockquote {
+        @apply p-1 pl-1.5 text-xl my-1 border-l-4 border-gray-300 bg-gray-100;
+    }
+
+    /* OTHERS */
+    .typography pre {
+        @apply bg-gray-100 border-gray-300 mb-2 p-1.5 clear-both text-gray-800;
+    }
+
+    address {
+        @apply block mb-2;
+    }
+
+    .is-style-regular {
+        @apply container max-w-screen-lg;
+    }
+
+    .is-style-narrow {
+        @apply container max-w-screen-md;
+    }
+
+    .is-style-wide {
+        @apply max-w-[75%];
+    }
+
+    .is-style-full {
+        @apply max-w-full;
+    }
+    
+}

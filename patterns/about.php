@@ -1,0 +1,16 @@
+<?php
+/**
+* Title: About
+* Slug: tzo/about
+* Description: A page block pattern to introduce the company.
+* Categories: layout
+* Inserter: yes
+*/
+?>
+<!-- wp:acf/introduction {"name":"acf/introduction","data":{"field_664c2ed5302a7":"About Our Company","field_664c2eee6009d":"Optional Tagline","field_664c2ed530307":"\u003cp class=\u0022lead\u0022\u003eNullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.\u003c/p\u003e\r\nNullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.","field_664c2ed53036d":{"title":"About Us","url":"#","target":""},"field_664c2f3d5188f":{"title":"Learn More","url":"#","target":""},"field_664c2ed5303d5":"0","field_664c2f5f333bd":"1"},"mode":"auto"} /-->
+
+<!-- wp:acf/highlight {"name":"acf/highlight","data":{"field_64c9543896ade":"What We Do","field_64c9543896b35":"Optional Tagline","field_64c9543896be1":" ","field_665a3a16782b5":"","field_64c9543896c36":"Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.","field_64c9543896cdc":"caption-center","field_64c9543896dc9":{"title":"Our Story","url":"#","target":""},"field_64c9543896e31":{"title":"","url":"","target":""},"field_64c9543896e81":"0"},"mode":"auto","className":"is-style-wide"} /-->
+
+<!-- wp:acf/half-box {"name":"acf/half-box","data":{"field_64c8ebceb4148":"Our Culture","field_64c8ebf34ce09":"Optional Tagline","field_64c8eca74ce0a":" ","field_665a3979158b4":"","field_64c8ebceb41ba":"Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui.","field_64c8ed3e8f02c":"0","field_64c8f18d06707":"0","field_64c8ebceb4242":{"title":"Learn More","url":"#","target":""},"field_64c8ebceb4294":{"title":"","url":"","target":""},"field_64c8ebceb43ab":"0"},"mode":"auto","className":"is-style-default"} /-->
+
+<!-- wp:acf/half-box {"name":"acf/half-box","data":{"field_64c8ebceb4148":"Our People","field_64c8ebf34ce09":"Optional Tagline","field_64c8eca74ce0a":" ","field_665a3979158b4":"","field_64c8ebceb41ba":"Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui.","field_64c8ed3e8f02c":"1","field_64c8f18d06707":"0","field_64c8ebceb4242":{"title":"Learn More","url":"#","target":""},"field_64c8ebceb4294":{"title":"","url":"","target":""},"field_64c8ebceb43ab":"0"},"mode":"auto","className":"is-style-default"} /-->

@@ -1,0 +1,22 @@
+{
+    "name": "acf/html-content",
+    "title": "HTML Content",
+    "description": "An HTML Content Block (WYSIWYG).",
+    "category": "text",
+    "icon": "html",
+    "keywords": ["HTML Content", "WYSIWYG"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "html-content.php"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true
+    },
+    "styles": [
+        { "name": "default", "label": "Default", "isDefault": true },
+        { "name": "narrow", "label": "Narrow" },
+        { "name": "wide", "label": "Wide" },
+        { "name": "full", "label": "Full" }
+    ]
+}

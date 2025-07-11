@@ -1,0 +1,22 @@
+{
+    "name": "acf/embed",
+    "title": "Embed",
+    "description": "An Embed Block.",
+    "category": "media",
+    "icon": "media-code",
+    "keywords": [" Video", "Map", "Code"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "embed.php"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true
+    },
+    "styles": [
+        { "name": "default", "label": "Default", "isDefault": true },
+        { "name": "narrow", "label": "Narrow" },
+        { "name": "wide", "label": "Wide" },
+        { "name": "full", "label": "Full" }
+    ]
+}

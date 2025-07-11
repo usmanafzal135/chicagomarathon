@@ -1,0 +1,22 @@
+{
+    "name": "acf/introduction",
+    "title": "Introduction",
+    "description": "An Introduction Block (WYSIWYG).",
+    "category": "text",
+    "icon": "html",
+    "keywords": ["Introduction", "WYSIWYG"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "introduction.php"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true
+    },
+    "styles": [
+        { "name": "narrow", "label": "Narrow", "isDefault": true },
+        { "name": "default", "label": "Default" },
+        { "name": "wide", "label": "Wide" },
+        { "name": "full", "label": "Full" }
+    ]
+}

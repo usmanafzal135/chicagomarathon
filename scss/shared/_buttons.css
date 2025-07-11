@@ -1,0 +1,45 @@
+@layer components {
+    button,
+    .button {
+        @apply no-underline border border-primary text-white text-base bg-primary hover:bg-primary-dark font-bold py-half px-1 mb-1 rounded inline-block hover:shadow-lg active:shadow-lg transition will-change-auto duration-150 ease-in-out;
+    }
+
+    button.secondary,
+    .button.secondary {
+        @apply text-white bg-secondary border-secondary hover:bg-secondary-dark;
+    }
+
+    button.large,
+    .button.large {
+        @apply py-0.75 px-1.5 text-xl;
+    }
+
+    button.small,
+    .button.small {
+        @apply text-sm;
+    }
+
+    button.hollow,
+    .button.hollow {
+        @apply bg-transparent border-primary text-primary-dark;
+    }
+
+    button.hollow.white,
+    .button.hollow.white {
+        @apply bg-transparent border-white text-white;
+    }
+
+    button.clear,
+    .button.clear {
+        @apply bg-transparent border-transparent text-primary-dark;
+    }
+
+    button.clear.white,
+    .button.clear.white {
+        @apply bg-transparent border-transparent text-white;
+    }
+
+    .link-button {
+        @apply px-0 bg-transparent font-bold text-primary hover:text-primary-dark underline;
+    }
+}

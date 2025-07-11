@@ -1,0 +1,22 @@
+/* 
+- Only accepts RGB values
+- Use the following format: --color-primary: 255 255 255;
+- To add a new theme, copy the following code and add paste it below and don't forget to replace the values with your own:
+
+    [data-color-theme='theme-name'] {
+        --color-primary: 60 64 218;
+        --color-secondary: 38 38 48;
+        --color-accent: 231 79 74;
+    } 
+
+/* Theme CSS Defaults */
+:root,
+[data-color-theme='default']  {
+    --color-primary: 0 128 102;
+    --color-primary-light: 0 142 111;
+    --color-primary-dark: 0 112 87;
+
+    --color-secondary: 17 17 17;
+    --color-secondary-light: 85 85 85;
+    --color-secondary-dark: 0 0 0;
+}

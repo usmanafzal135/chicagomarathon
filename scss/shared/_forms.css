@@ -1,0 +1,35 @@
+@layer base {
+    input[type='text'],
+    input[type='password'],
+    input[type='email'],
+    input[type='number'],
+    input[type='url'],
+    input[type='date'],
+    input[type='datetime-local'],
+    input[type='month'],
+    input[type='week'],
+    input[type='time'],
+    input[type='search'],
+    input[type='tel'],
+    select,
+    select[multiple],
+    textarea {
+        @apply border-slate-400 rounded w-full box-border;
+    }
+
+    [type=checkbox],
+    [type=radio] {
+        @apply mr-qtr border-slate-400 checked:bg-primary hover:checked:bg-primary;
+    }
+
+    .gform_wrapper.gravity-theme .gfield_consent_description, 
+    .gform_wrapper.gravity-theme .field_description_below .gfield_consent_description {
+        @apply border-0 !important;
+        @apply pl-0 !important;
+    }
+
+    .gform_wrapper.gravity-theme .gfield-choice-input,
+    .gform_wrapper.gravity-theme .gfield-choice-input + label {
+        margin-bottom: 0.5rem !important;
+    }
+}

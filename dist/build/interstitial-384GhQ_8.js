@@ -1,0 +1,2 @@
+const t=new RegExp(location.host);document.querySelectorAll('a:not([href^="mailto:"], [href^="/"], [href^="#"])').forEach((e=>{const n=e.getAttribute("href");if(!n||t.test(n)||e.classList.contains("standard-continue"))return;e.classList.add("boa-modal-open"),e.setAttribute("data-href",n);const a=document.createElement("span");a.classList.add("sr-only"),a.textContent="Opens a Dialog",e.appendChild(a),e.addEventListener("click",(t=>{t.preventDefault(),Alpine.store("interstitial").show(e,n)}))}));
+//# sourceMappingURL=interstitial-384GhQ_8.js.map

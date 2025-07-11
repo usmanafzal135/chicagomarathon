@@ -1,0 +1,41 @@
+@layer utilities {
+    .absolute-center { /* Absolute center an element, vertically and horizontally. */
+        @apply absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4;
+    }
+
+    .vertical-center { /* Vertically center an element. You can position the element offset by adding positioning TW classes ".left-[30%]" or ".right-[40px]" as an example. */
+        @apply absolute top-2/4 -translate-y-2/4;
+    }
+
+    .with-overlay { /* Adds a dark overlay to an element. You can change the overlay color by adding TW classes to the element. E.g. class="with-overlay before:bg-primary before:bg-opacity-50" */
+        @apply relative before:absolute before:h-full before:w-full before:left-0 before:top-0 before:bg-opacity-50 before:bg-black before:transition-all duration-300;
+    }
+
+    .absolute-cover { /* Adds a transparent overlay to an element. Useful for hidden links and buttons. */
+        @apply absolute left-0 top-0 w-full h-full;
+    }
+
+    .clearfix {
+        @apply clear-both after:clear-both after:content-[''] after:table;
+    }
+
+    .is-style-regular {
+        @apply container max-w-screen-lg;
+    }
+
+    .is-style-narrow {
+        @apply container max-w-screen-md;
+    }
+
+    .is-style-wide {
+        @apply max-w-[75%];
+    }
+
+    .is-style-full {
+        @apply max-w-full;
+    }
+
+    :focus-visible {
+        @apply outline-4 outline-gray-300 outline-offset-4;
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "name": "acf/stats",
+    "title": "Stats",
+    "description": "A Stats Block.",
+    "category": "design",
+    "icon": "networking",
+    "keywords": ["Stats", "stats"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "stats.php"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true
+    },
+    "styles": [
+        { "name": "default", "label": "Default", "isDefault": true },
+        { "name": "wide", "label": "Wide" },
+        { "name": "full", "label": "Full" }
+    ]
+}

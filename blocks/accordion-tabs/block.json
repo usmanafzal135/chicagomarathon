@@ -1,0 +1,23 @@
+{
+    "name": "acf/accordion-tabs",
+    "title": "Accordion/Tabs",
+    "description": "An Accordion/Tabs Block.",
+    "category": "design",
+    "icon": "plus",
+    "keywords": ["accordion", "tabs", "expander"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "accordion-tabs.php"
+    },
+    "supports": {
+        "align": false,
+        "jsx": false,
+        "anchor": true
+    },
+    "styles": [
+        { "name": "default", "label": "Default", "isDefault": true },
+        { "name": "narrow", "label": "Narrow" },
+        { "name": "wide", "label": "Wide" },
+        { "name": "full", "label": "Full" }
+    ]
+}

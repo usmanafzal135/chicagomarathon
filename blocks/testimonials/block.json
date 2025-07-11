@@ -1,0 +1,22 @@
+{
+    "name": "acf/testimonials",
+    "title": "Testimonials",
+    "description": "A testimonial Block.",
+    "category": "design",
+    "icon": "testimonial",
+    "keywords": ["Testimonials", "Quote"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "testimonials.php"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true
+    },
+    "styles": [
+        { "name": "default", "label": "Default", "isDefault": true },
+        { "name": "narrow", "label": "Narrow" },
+        { "name": "wide", "label": "Wide" },
+        { "name": "full", "label": "Full" }
+    ]
+}

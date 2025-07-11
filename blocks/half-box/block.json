@@ -1,0 +1,21 @@
+{
+    "name": "acf/half-box",
+    "title": "Half Box",
+    "description": "A Half Box Block.",
+    "category": "design",
+    "icon": "star-half",
+    "keywords": ["Half Box", "half box", "half"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "half-box.php"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true
+    },
+    "styles": [
+        { "name": "default", "label": "Default", "isDefault": true },
+        { "name": "wide", "label": "Wide" },
+        { "name": "full", "label": "Full" }
+    ]
+}

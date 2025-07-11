@@ -1,0 +1,173 @@
+{
+    "key": "group_5ffb8774085c7",
+    "title": "Hero Settings",
+    "fields": [
+        {
+            "key": "field_5ffb87a38ae8b",
+            "label": "Title",
+            "name": "hero_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "This will replace the page title. Maximum of 100 characters",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": 100
+        },
+        {
+            "key": "field_5ffb87e38ae8c",
+            "label": "Tagline",
+            "name": "hero_tagline",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Adds a tagline below the hero title. Only shows when you have a hero image. Maximum of 200 characters",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": 200
+        },
+        {
+            "key": "field_5ffb881a8ae8d",
+            "label": "Feature Hero",
+            "name": "feature_hero",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Display a larger hero image.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5ffb888e8ae8e",
+            "label": "Remove Margin Bottom",
+            "name": "remove_margin_bottom",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_6164c5cfdb8dd",
+            "label": "Background Video URL",
+            "name": "background_video_url",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "Add the URL of a Vimeo video to show as a background video in the hero.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_6164c617db8de",
+            "label": "Popup Video URL",
+            "name": "popup_video_url",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "Add the URL of a YouTube\/Vimeo video to show as a popup video in the hero.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_64d3188cc33b7",
+            "label": "Popup Video Title",
+            "name": "popup_video_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Write a short description of what the video is supposed to convey to users who are unable to see the video.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6164c617db8de",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1752227304
+}

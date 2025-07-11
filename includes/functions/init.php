@@ -1,0 +1,40 @@
+<?php
+
+/**
+ * Include helpers and hooks
+ */
+
+get_template_parts(
+    array(
+        'includes/functions/wp-settings/plugins-exist',
+        'includes/functions/wp-settings/wp-disable-comments',
+        'includes/functions/wp-settings/wp-defaults',
+        'includes/functions/wp-settings/wp-images',
+        'includes/functions/wp-settings/wp-editor',
+        'includes/functions/enqueuer/enqueuer',
+        'includes/functions/menus/primary',
+        'includes/functions/menus/utility-links',
+        'includes/functions/menus/footer',
+        'includes/functions/sidebars/sidebars',
+        'includes/functions/acf/options-page',
+        'includes/functions/custom-post-types/gallery',
+        'includes/functions/custom-post-types/testimonials',
+        'includes/functions/helpers/get-svg',
+        'includes/functions/helpers/get-postid-by-path',
+        'includes/functions/helpers/get-catid-by-term',
+        'includes/functions/helpers/get-monthly-archive-link',
+        'includes/functions/helpers/get-postedby-link',
+        'includes/functions/helpers/get-post-read-time',
+        'includes/functions/helpers/video',
+        'includes/functions/helpers/get-column-classes',
+        'includes/functions/hooks/filters/password-protect-filters',
+        'includes/functions/hooks/filters/gravity-forms',
+        'includes/functions/hooks/filters/yoast',
+        'includes/functions/hooks/filters/embeds',
+        'includes/functions/hooks/filters/excerpt',
+        'includes/functions/hooks/filters/pagination',
+        'includes/functions/hooks/filters/video-embed-urls',
+        'includes/functions/hooks/core/core-table',
+        'includes/functions/hooks/core/core-columns',
+    )
+);

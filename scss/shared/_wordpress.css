@@ -1,0 +1,140 @@
+@layer components {
+    .alignleft {
+        @apply float-left mr-2 mt-half;
+    }
+
+    .aligncenter {
+        @apply mx-auto block;
+    }
+
+    .alignright {
+        @apply float-right ml-2 mt-half;
+    }
+
+    a .alignleft {
+        @apply mt-0 mb-1 mr-2 mt-half;
+    }
+
+    a .aligncenter {
+        @apply mx-auto text-center;
+    }
+
+    a .alignright {
+        @apply mt-0 mb-1 ml-2 mt-half;
+    }
+
+    .wp-caption {
+        @apply bg-gray-200 max-w-full p-1 m-0;
+    }
+
+    .wp-caption.alignleft {
+        @apply mr-2 mt-half;
+    }
+
+    .wp-caption.alignright {
+        @apply ml-2 mt-half;
+    }
+
+    .wp-caption-text {
+        @apply text-sm italic m-0;
+    }
+
+    .wp-block-table {
+        @apply border-collapse container max-w-screen-xl;
+    }
+    
+    .wp-block-table table {
+        @apply min-w-max md:min-w-full;
+    }
+    
+    .wp-block-table tr {
+        @apply border-b border-gray-200;
+    }
+    
+    .is-style-stripes tbody tr:nth-child(odd) {
+        @apply bg-gray-100;
+    }
+    
+    .wp-block-table thead {
+        @apply border-b-4 border-gray-200;
+    }
+
+    .wp-block-table tfoot {
+        @apply border-t-4 border-gray-200;
+    }
+
+    .wp-block-table figcaption {
+        @apply p-1 text-sm;
+    }
+
+    .wp-block-table th,
+    .wp-block-table td {
+        @apply px-1 py-1 border-b border-gray-200;
+    }
+
+    .wp-block-table .has-text-align-right {
+        @apply text-right;
+    }
+
+    .wp-block-table .has-text-align-left {
+        @apply text-left;
+    }
+
+    .wp-block-table .has-text-align-center {
+        @apply text-center;
+    }
+
+    .is-style-regular {
+        @apply container !max-w-screen-xl;
+    }
+
+    .is-style-wide {
+        @apply container !max-w-screen-3xl;
+    }
+
+    .is-style-full {
+        @apply !max-w-full;
+    }
+
+    .is-style-narrow {
+        @apply container !max-w-screen-md;
+    }
+
+    .wp-block-columns {
+        @apply px-1 mx-auto w-full max-w-screen-xl flex-col !gap-y-1 !gap-x-1 md:!flex-row md:!gap-x-3 lg:!gap-x-4;
+    }
+
+    .wp-block-columns.is-layout-flex {
+        @apply items-start;
+    }
+
+    .wp-block-columns .wp-block-column {
+        @apply w-full;
+    }
+
+    .wp-block-columns .wp-block-column.is-vertically-aligned-top {
+        @apply self-start;
+    }
+
+    .wp-block-columns .wp-block-column.is-vertically-aligned-center {
+        @apply self-center;
+    }
+
+    .wp-block-columns .wp-block-column.is-vertically-aligned-bottom {
+        @apply self-end;
+    }
+
+    .wp-block-columns .wp-block-column.is-vertically-aligned-stretch {
+        @apply self-stretch;
+    }
+
+    .wp-block-columns .wp-block-column .container {
+        @apply !p-0 !max-w-full;
+    }
+
+    /* If carousel is in columns block, prevent it from going to 16/7 on 2xl */
+    .wp-block-columns .wp-block-column .carousel-figure {
+        @apply 2xl:aspect-[3/2];
+    }
+    
+}

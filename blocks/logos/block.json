@@ -1,0 +1,22 @@
+{
+    "name": "acf/logos",
+    "title": "Logos",
+    "description": "Logos Block.",
+    "category": "design",
+    "icon": "images-alt",
+    "keywords": ["logos", "thumbnails"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "logos.php"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true
+    },
+    "styles": [
+        { "name": "default", "label": "Default", "isDefault": true },
+        { "name": "narrow", "label": "Narrow" },
+        { "name": "wide", "label": "Wide" },
+        { "name": "full", "label": "Full" }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "name": "acf/pathways",
+    "title": "Pathways",
+    "description": "A Pathways Block.",
+    "category": "design",
+    "icon": "networking",
+    "keywords": ["Pathways", "pathways"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "pathways.php"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true
+    },
+    "styles": [
+        { "name": "default", "label": "Default", "isDefault": true },
+        { "name": "wide", "label": "Wide" },
+        { "name": "full", "label": "Full" }
+    ]
+}

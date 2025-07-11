@@ -1,0 +1,2 @@
+!function(e,s,t){const r=new IntersectionObserver((e=>{e.forEach((e=>{e.isIntersecting&&(e.target.classList.add(s),e.target.querySelectorAll(".js-stagger").forEach(((e,s)=>{e.classList.add("js-staggered"),e.style.transitionDelay=.1+.15*s+"s"})))}))}),{threshold:t||.1});document.querySelectorAll(e).forEach((e=>r.observe(e)))}(".js-hidden","js-animate");
+//# sourceMappingURL=scroll-animation-GyoLM-xy.js.map

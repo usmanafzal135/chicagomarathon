@@ -1,0 +1,22 @@
+{
+    "name": "acf/image-gallery",
+    "title": "Image Gallery",
+    "description": "Image Gallery",
+    "category": "media",
+    "icon": "camera",
+    "keywords": ["Images", "Gallery"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "image-gallery.php"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true
+    },
+    "styles": [
+        { "name": "default", "label": "Default", "isDefault": true },
+        { "name": "narrow", "label": "Narrow" },
+        { "name": "wide", "label": "Wide" },
+        { "name": "full", "label": "Full" }
+    ]
+}
