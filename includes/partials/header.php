@@ -30,8 +30,8 @@
     </div>
 
     <!-- Header (logo & navigation) -->
-    <div class="px-1 flex flex-col lg:flex-row  lg:px-2">
-        <div class="lg:shrink flex items-center justify-between mb-0">
+    <div class="flex flex-col lg:flex-row lg:px-2">
+        <div class="lg:shrink flex items-center justify-between mb-0 px-1 lg:px-0">
             
             <?php if (is_front_page()) { ?>
                 <img src="<?php bloginfo('template_url'); ?>/images/chicagomarathon-logo.png" alt="<?php echo esc_html(get_bloginfo('name')); ?>" class="w-[160px] sm:w-[250px] lg:w-[310px]" />
