@@ -2,11 +2,20 @@
     <div class="js-stagger p-2 lg:pt-3">
         <div class="container">
             <div class="max-w-[700px] mx-auto">
+                <?php 
+                $footer_gallery = get_field('footer_gallery', 'option');
+                if (!empty($footer_gallery)){
+                ?>
                 <div class="supponcers mb-3">
-                    <img src="<?php bloginfo('template_url'); ?>/images/companies.png" alt="supponcers" class="mx-auto" />
+                    <?php 
+                    foreach($footer_gallery as $image){
+                        echo '<img src="'.$image['url'].'" alt="'.$image['alt'].'" class="mx-auto" />';
+                    }
+                    ?>
                 </div>
-
-                <?php if ( has_nav_menu( 'footer' ) ) {
+                <?php 
+                }
+                if ( has_nav_menu( 'footer' ) ) {
                     wp_nav_menu(array(
                         'theme_location' => 'footer',
                         'container'      => false,
@@ -18,10 +27,18 @@
 
                 <?php
                     $copyrightText = get_field('copyright', 'option');
+                    $privacy_policy_code = get_field('privacy_policy_code', 'option');
+                    $privacy_policy_link = get_field('privacy_policy_link', 'option');
+                    $contactEmail = get_field('contact_email', 'option');
+                    $contactEmail = get_field('contact_email', 'option');
                     $contactEmail = get_field('contact_email', 'option');
                     $contactNumber = get_field('contact_number', 'option');
                     $contactAddress = get_field('contact_address', 'option');
                     $contactInfo = get_field('contact_information', 'option');
+                    $download_button_title = get_field('download_button', 'option');
+                    $is_file = get_field('is_file', 'option');
+                    $download_file = get_field('download_file', 'option');
+                    $file_url = get_field('file_url', 'option');
                 ?>
 
                 <div class="js-stagger text-center mb-2">
@@ -35,12 +52,18 @@
 
                 <p class="js-stagger text-center text-gray-600 leading-6 mb-3">
                     <?php if ($copyrightText) { echo '&copy; ' . $copyrightText . '<br />'; } ?>
-                    ARFN3S44 <a href="#" class="font-semibold text-primary">Privacy notice</a>
-                    <!-- Designed &amp; developed by <a href="https://timezoneone.com/" class="text-primary-dark" target="_blank" rel="noopener noreferrer">TimeZoneOne</a> -->
+                    <?php if ($privacy_policy_link) { echo $privacy_policy_code .' '.'<a href="'.$privacy_policy_link['url'].'" target="'.$privacy_policy_link['target'].'" class="font-semibold text-primary">Privacy notice</a>';  } ?>
                 </p>
+
                 <p class="text-center font-semibold">
-                    <img src="<?php bloginfo('template_url'); ?>/images/icons/pdf-icon.png" alt="img" width="24" class="mr-qtr inline-block" />
-                    <a href="<?php bloginfo('url')?>" class="text-primary underline">Download Acrobat Reader</a>
+                    <?php if ($is_file && !empty($download_file)) { 
+                        echo '<img src="'.get_template_directory_uri().'/images/icons/pdf-icon.png" alt="img" width="24" class="mr-qtr inline-block" />';
+                        echo '<a href="#" class="text-primary underline">'.$download_button_title.'</a>';
+                     } elseif (!$is_file && $file_url) {
+                        echo '<img src="'.get_template_directory_uri().'/images/icons/pdf-icon.png" alt="img" width="24" class="mr-qtr inline-block" />';
+                        echo '<a href="'.$file_url.'" class="text-primary underline">'.$download_button_title.'</a>';
+                     }
+                     ?>
                 </p>
             </div>
         </div>
