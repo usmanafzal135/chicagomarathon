@@ -2,8 +2,20 @@
     <div class="js-stagger p-2 lg:pt-3">
         <div class="container">
             <div class="max-w-[700px] mx-auto">
-                <div class="supponcers mb-3">
-                    <img src="<?php bloginfo('template_url'); ?>/images/companies.png" alt="supponcers" class="mx-auto" />
+                <div class="supponcers flex flex-wrap gap-x-3 gap-y-3 md:gap-y-2 justify-center items-center mb-3">
+                    <div class="w-[100%] md:w-auto">
+                        <img src="<?php bloginfo('template_url'); ?>/images/bank-of-america-logo.png" class="h-[54px] mx-auto" alt="supponcers" />
+                    </div>
+                    <div class="w-[100%] md:w-auto">
+                        <img src="<?php bloginfo('template_url'); ?>/images/bank-of-america2-logo.png" class="h-[54px] mx-auto" alt="supponcers" />
+                    </div>
+                    <div class="w-[100%] md:w-auto">
+                        <img src="<?php bloginfo('template_url'); ?>/images/abbot-world-logo.png" class="h-[54px] mx-auto" alt="supponcers" />
+                    </div>
+                    <div class="w-[100%] md:w-auto">
+                        <img src="<?php bloginfo('template_url'); ?>/images/abbot-world2-logo.png" class="h-[54px] mx-auto" alt="supponcers" />
+                    </div>
+
                 </div>
 
                 <?php if ( has_nav_menu( 'footer' ) ) {
