@@ -1,5 +1,5 @@
 
-<div class="relative lg:mt-0 lg:flex lg:mb-0 flex-col lg:flex-col-reverse bg-gray-100 rounded lg:bg-transparent lg:p-0" :class="navOpen ? 'max-lg:mt-1 max-lg:p-1' : ''">
+<div class="relative lg:mt-0 lg:flex lg:mb-0 flex-col lg:flex-col-reverse rounded lg:p-0" :class="navOpen ? 'max-lg:mt-1 max-lg:p-1' : ''">
     <div class="flex flex-col lg:flex-row">
 
         <nav aria-label="main-navigation" aria-describedby="main-navigation" class="js-main-nav lg:mb-0" :class="navOpen ? 'max-lg:mb-1' : ''">
@@ -9,7 +9,7 @@
                         'theme_location' => 'primary',
                         'container'      => false,
                         'walker'         => new Primary_Walker_Nav_Menu(),
-                        'items_wrap'     => '<ul x-ref="mainMenu" class="menu main-menu flex flex-col lg:flex-row justify-end gap-half" aria-labelledby="menu-button-%1$s">%3$s</ul>',
+                        'items_wrap'     => '<ul x-ref="mainMenu" class="menu main-menu flex flex-col lg:flex-row justify-end lg:gap-half" aria-labelledby="menu-button-%1$s">%3$s</ul>',
                     ));
                 }
             ?>
