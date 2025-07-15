@@ -254,78 +254,41 @@ module.exports = {
                             marginTop: theme('spacing.half'),
                             marginBottom: theme('spacing.1'),
                         },
-                        // Old FontSizes
-                        // 'h1, .h1': {
-                        //     fontSize: theme('fontSize.fluid-h1'),
-                        //     '@screen xl': {
-                        //         fontSize: theme('fontSize.5xl[0]'),
-                        //     },
-                        // },
-                        // 'h2, .h2': {
-                        //     fontSize: theme('fontSize.fluid-h2'),
-                        //     '@screen xl': {
-                        //         fontSize: theme('fontSize.4xl[0]'),
-                        //     },
-                        // },
-                        // 'h3, .h3': {
-                        //     fontSize: theme('fontSize.fluid-h3'),
-                        //     '@screen xl': {
-                        //         fontSize: theme('fontSize.3xl[0]'),
-                        //     },
-                        // },
-                        // 'h4, .h4': {
-                        //     fontSize: theme('fontSize.fluid-h4'),
-                        //     '@screen xl': {
-                        //         fontSize: theme('fontSize.2xl[0]'),
-                        //     },
-                        // },
-                        // 'h5, .h5': {
-                        //     fontSize: theme('fontSize.lg[0]'),
-                        //     '@screen xl': {
-                        //         fontSize: theme('fontSize.xl[0]'),
-                        //     },
-                        // },
-                        // 'h6, .h6': {
-                        //     fontSize: theme('fontSize.base[0]'),
-                        //     '@screen xl': {
-                        //         fontSize: theme('fontSize.lg[0]'),
-                        //     },
-                        // },
-
+                        // If 1rem = 16px
                         'h1, .h1': {
-                            fontSize: '48px',
+                            fontSize: '3rem', // 48px
                             '@screen xl': {
-                                fontSize: '28px',
+                                fontSize: '1.75rem', // 28px
                             },
                         },
                         'h2, .h2': {
-                            fontSize: '32px',
+                            fontSize: '2rem', // 32px
                             '@screen xl': {
-                                fontSize: '24px',
+                                fontSize: '1.5rem', // 24px
                             },
                         },
                         'h3, .h3': {
-                            fontSize: '28px',
+                            fontSize: '1.75rem', // 28px
                             '@screen xl': {
-                                fontSize: '23px',
+                                fontSize: '1.438rem', // 23px
                             },
                         },
                         'h4, .h4': {
-                            fontSize: '24',
+                            fontSize: '1.5rem', // 24px
                             '@screen xl': {
-                                fontSize: '21px',
+                                fontSize: '1.313rem', // 21px
                             },
                         },
                         'h5, .h5': {
-                            fontSize: '20px',
+                            fontSize: '1.25rem', // 20px
                             '@screen xl': {
-                                fontSize: '18px',
+                                fontSize: '1.125rem', // 18px
                             },
                         },
                         'h6, .h6': {
-                            fontSize: '18px',
+                            fontSize: '1.125rem', // 18px
                             '@screen xl': {
-                                fontSize: '16px',
+                                fontSize: '1rem', // 16px
                             },
                         },
                     },
