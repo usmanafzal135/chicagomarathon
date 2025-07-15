@@ -9,7 +9,7 @@
                         'theme_location' => 'primary',
                         'container'      => false,
                         'walker'         => new Primary_Walker_Nav_Menu(),
-                        'items_wrap'     => '<ul x-ref="mainMenu" class="menu main-menu flex flex-col lg:flex-row justify-end lg:gap-half" aria-labelledby="menu-button-%1$s">%3$s</ul>',
+                        'items_wrap'     => '<ul x-ref="mainMenu" class="menu main-menu flex flex-col lg:flex-row justify-end lg:gap-x-2 2xl:gap-x-[40px] lg:gap-y-1" aria-labelledby="menu-button-%1$s">%3$s</ul>',
                     ));
                 }
             ?>
@@ -26,19 +26,20 @@
                 </button>
             <?php } ?> -->
 
-            <!-- <?php if (get_field('header_button', 'option')) { 
-                
-                $header_button = get_field('header_button', 'option');
-                    if ($header_button) {
-                        $target = $header_button['target'];
-                    } else {
-                        $target = "_parent";
-                    }
-            ?>
-                <div class="mb-1 w-full flex flex-col lg:flex-row lg:justify-end gap-half lg:gap-x-1 lg:mb-0" :class="!navOpen ? 'max-lg:hidden max-lg:invisible' : ''">
-                    <a href="<?php echo $header_button['url']; ?>" class="button self-center mb-1 lg:ml-1 lg:mb-0 w-full text-center no-underline" target="<?php echo $target?>"><?php echo $header_button['title']?></a>
-                </div>
-            <?php } ?> -->
+            
+                <?php if (get_field('header_button', 'option')) { 
+                    $header_button = get_field('header_button', 'option');
+                        if ($header_button) {
+                            $target = $header_button['target'];
+                        } else {
+                            $target = "_parent";
+                        }
+                ?>
+                    <div class="mb-1 w-full flex flex-col lg:hidden" :class="!navOpen ? 'max-lg:hidden max-lg:invisible' : ''">
+                        <a href="<?php echo $header_button['url']; ?>" class="button self-center mb-1 lg:ml-1 lg:mb-0 w-full text-center no-underline" target="<?php echo $target?>"><?php echo $header_button['title']?></a>
+                    </div>
+                <?php } ?>
+            
         </div>
     </div>
 
