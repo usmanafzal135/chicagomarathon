@@ -2432,7 +2432,7 @@ address {
       }
       .dropdown-menu {
         position: absolute;
-        top: 100%;
+        top: 81px;
         left: 0;
         .dropdown-menu {
           top: 0;
@@ -2586,10 +2586,6 @@ address {
   margin-bottom: 2rem;
 }
 
-.-ml-half {
-  margin-left: -0.5rem;
-}
-
 .mb-0 {
   margin-bottom: 0;
 }
@@ -2636,6 +2632,10 @@ address {
 
 .ml-0\.75 {
   margin-left: 0.75rem;
+}
+
+.ml-half {
+  margin-left: 0.5rem;
 }
 
 .ml-qtr {
@@ -2758,6 +2758,10 @@ address {
   height: 1.5em;
 }
 
+.h-\[500px\] {
+  height: 500px;
+}
+
 .h-\[54px\] {
   height: 54px;
 }
@@ -2776,6 +2780,14 @@ address {
 
 .h-full {
   height: 100%;
+}
+
+.max-h-4 {
+  max-height: 4rem;
+}
+
+.min-h-\[2\.5rem\] {
+  min-height: 2.5rem;
 }
 
 .w-1 {
@@ -2810,8 +2822,8 @@ address {
   width: 100%;
 }
 
-.w-\[160px\] {
-  width: 160px;
+.w-\[146px\] {
+  width: 146px;
 }
 
 .w-\[250px\] {
@@ -2959,6 +2971,10 @@ address {
   align-content: center;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-center {
   align-items: center;
 }
@@ -2994,6 +3010,11 @@ address {
 .gap-x-3 {
   -moz-column-gap: 3rem;
        column-gap: 3rem;
+}
+
+.gap-x-half {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
 }
 
 .gap-y-3 {
@@ -3244,9 +3265,9 @@ address {
   padding-right: 1.5rem;
 }
 
-.px-2 {
-  padding-left: 2rem;
-  padding-right: 2rem;
+.px-3 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .px-qtr {
@@ -3362,6 +3383,11 @@ address {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-2xs {
+  font-size: 0.5rem;
+  line-height: 0.75rem;
 }
 
 .text-3xl {
@@ -3921,18 +3947,9 @@ address {
 }
 
 @media (min-width: 640px) {
-  .sm\:w-\[250px\] {
-    width: 250px;
-  }
-
   .sm\:gap-x-1 {
     -moz-column-gap: 1rem;
          column-gap: 1rem;
-  }
-
-  .sm\:py-half {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
   }
 }
 
@@ -4105,8 +4122,8 @@ address {
     min-height: 650px;
   }
 
-  .lg\:\!w-\[180px\] {
-    width: 180px !important;
+  .lg\:\!w-\[280px\] {
+    width: 280px !important;
   }
 
   .lg\:w-1\/4 {
@@ -4125,8 +4142,8 @@ address {
     width: 120px;
   }
 
-  .lg\:w-\[310px\] {
-    width: 310px;
+  .lg\:w-\[250px\] {
+    width: 250px;
   }
 
   .lg\:w-\[80px\] {
@@ -4194,6 +4211,10 @@ address {
     flex-wrap: nowrap;
   }
 
+  .lg\:items-end {
+    align-items: flex-end;
+  }
+
   .lg\:items-center {
     align-items: center;
   }
@@ -4206,18 +4227,23 @@ address {
     justify-content: center;
   }
 
-  .lg\:gap-half {
-    gap: 0.5rem;
-  }
-
   .lg\:gap-x-1 {
     -moz-column-gap: 1rem;
          column-gap: 1rem;
   }
 
+  .lg\:gap-x-2 {
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+
   .lg\:gap-x-3 {
     -moz-column-gap: 3rem;
          column-gap: 3rem;
+  }
+
+  .lg\:gap-y-1 {
+    row-gap: 1rem;
   }
 
   .lg\:self-center {
@@ -4240,14 +4266,6 @@ address {
 
   .lg\:p-0 {
     padding: 0;
-  }
-
-  .lg\:p-0\.75 {
-    padding: 0.75rem;
-  }
-
-  .lg\:p-1 {
-    padding: 1rem;
   }
 
   .lg\:p-2 {
@@ -4274,6 +4292,11 @@ address {
     padding-right: 2rem;
   }
 
+  .lg\:px-3 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   .lg\:py-2 {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -4284,6 +4307,11 @@ address {
     padding-bottom: 3rem;
   }
 
+  .lg\:py-half {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
   .lg\:py-qtr {
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
@@ -4291,6 +4319,10 @@ address {
 
   .lg\:pb-2 {
     padding-bottom: 2rem;
+  }
+
+  .lg\:pb-\[37px\] {
+    padding-bottom: 37px;
   }
 
   .lg\:pl-2 {
@@ -4311,6 +4343,10 @@ address {
 
   .lg\:pr-\[35\%\] {
     padding-right: 35%;
+  }
+
+  .lg\:pt-0 {
+    padding-top: 0;
   }
 
   .lg\:pt-1 {
@@ -4355,6 +4391,11 @@ address {
   .lg\:text-sm {
     font-size: 0.812rem;
     line-height: 1.25rem;
+  }
+
+  .lg\:text-xs {
+    font-size: 0.687rem;
+    line-height: 1rem;
   }
 
   .lg\:font-semibold {
@@ -4514,8 +4555,17 @@ address {
     aspect-ratio: 16/7;
   }
 
+  .\32xl\:w-\[310px\] {
+    width: 310px;
+  }
+
   .\32xl\:basis-1\/4 {
     flex-basis: 25%;
+  }
+
+  .\32xl\:gap-x-\[40px\] {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
   }
 
   .\32xl\:p-0 {
@@ -4528,6 +4578,11 @@ address {
 
   .\32xl\:p-1 {
     padding: 1rem;
+  }
+
+  .\32xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
