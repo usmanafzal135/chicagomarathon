@@ -660,79 +660,83 @@ h1,
 
 h1,
     .h1 {
-  /* @apply text-fluid-h1 xl:text-5xl; */
-  font-size: 28px;
+  font-size: 1.78rem;
+  line-height: 2.25rem;
 }
 
 @media (min-width: 1200px) {
   h1,
     .h1 {
-    font-size: 48px;
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
 h2,
     .h2 {
-  /* @apply text-fluid-h2 xl:text-4xl; */
-  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 @media (min-width: 1200px) {
   h2,
     .h2 {
-    font-size: 32px;
+    font-size: 2rem;
+    line-height: 2.75rem;
   }
 }
 
 h3,
     .h3 {
-  /* @apply text-fluid-h3 xl:text-3xl; */
-  font-size: 23px;
+  font-size: 1.438rem;
 }
 
 @media (min-width: 1200px) {
   h3,
     .h3 {
-    font-size: 28px;
+    font-size: 1.78rem;
+    line-height: 2.25rem;
   }
 }
 
 h4,
     .h4 {
-  /* @apply text-fluid-h4 xl:text-2xl; */
-  font-size: 21px;
+  font-size: 1.313rem;
 }
 
 @media (min-width: 1200px) {
   h4,
     .h4 {
-    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
 h5,
     .h5 {
-  /* @apply text-lg xl:text-xl; */
-  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 @media (min-width: 1200px) {
   h5,
     .h5 {
-    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
 h6,
     .h6 {
-  /* @apply text-base xl:text-lg; */
-  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 @media (min-width: 1200px) {
   h6,
     .h6 {
-    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -1374,62 +1378,62 @@ ol ol ol li {
 }
 
 .typography :where(h1, .h1):not(:where([class~="not-typography"] *)) {
-  font-size: 48px;
+  font-size: 3rem;
 }
 
 @media (min-width: 1200px) {
   .typography :where(h1, .h1):not(:where([class~="not-typography"] *)) {
-    font-size: 28px;
+    font-size: 1.75rem;
   }
 }
 
 .typography :where(h2, .h2):not(:where([class~="not-typography"] *)) {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 @media (min-width: 1200px) {
   .typography :where(h2, .h2):not(:where([class~="not-typography"] *)) {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 }
 
 .typography :where(h3, .h3):not(:where([class~="not-typography"] *)) {
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 
 @media (min-width: 1200px) {
   .typography :where(h3, .h3):not(:where([class~="not-typography"] *)) {
-    font-size: 23px;
+    font-size: 1.438rem;
   }
 }
 
 .typography :where(h4, .h4):not(:where([class~="not-typography"] *)) {
-  font-size: 24;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 1200px) {
   .typography :where(h4, .h4):not(:where([class~="not-typography"] *)) {
-    font-size: 21px;
+    font-size: 1.313rem;
   }
 }
 
 .typography :where(h5, .h5):not(:where([class~="not-typography"] *)) {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 @media (min-width: 1200px) {
   .typography :where(h5, .h5):not(:where([class~="not-typography"] *)) {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 }
 
 .typography :where(h6, .h6):not(:where([class~="not-typography"] *)) {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 @media (min-width: 1200px) {
   .typography :where(h6, .h6):not(:where([class~="not-typography"] *)) {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 
@@ -2670,10 +2674,6 @@ address {
   margin-top: 4rem;
 }
 
-.mt-\[12px\] {
-  margin-top: 12px;
-}
-
 .mt-half {
   margin-top: 0.5rem;
 }
@@ -2756,10 +2756,6 @@ address {
 
 .h-\[1\.5em\] {
   height: 1.5em;
-}
-
-.h-\[500px\] {
-  height: 500px;
 }
 
 .h-\[54px\] {
@@ -3118,11 +3114,6 @@ address {
   border-style: none !important;
 }
 
-.\!border-white {
-  --tw-border-opacity: 1 !important;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity)) !important;
-}
-
 .border-current {
   border-color: currentColor;
 }
@@ -3373,11 +3364,6 @@ address {
 
 .font-serif {
   font-family: Merriweather, serif;
-}
-
-.\!text-xs {
-  font-size: 0.687rem !important;
-  line-height: 1rem !important;
 }
 
 .text-2xl {
@@ -3750,23 +3736,24 @@ address {
     letter-spacing: -0.025em;
     --tw-text-opacity: 1;
     color: rgb(17 24 39 / var(--tw-text-opacity));
-    /* @apply text-fluid-h1 xl:text-5xl; */
-    font-size: 28px;
+    font-size: 1.78rem;
+    line-height: 2.25rem;
   }
 
   @media (min-width: 1200px) {
     .md\:h1 {
-      font-size: 48px;
+      font-size: 3rem;
+      line-height: 1;
     }
   }
 
   .typography :where(h1,.md\:h1):not(:where([class~="not-typography"] *)) {
-    font-size: 48px;
+    font-size: 3rem;
   }
 
   @media (min-width: 1200px) {
     .typography :where(h1,.md\:h1):not(:where([class~="not-typography"] *)) {
-      font-size: 28px;
+      font-size: 1.75rem;
     }
   }
 }
@@ -3965,14 +3952,6 @@ address {
   .md\:mx-auto {
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .md\:ml-2 {
-    margin-left: 2rem;
-  }
-
-  .md\:mt-0 {
-    margin-top: 0;
   }
 
   .md\:w-1\/2 {

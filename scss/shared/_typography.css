@@ -16,38 +16,32 @@
 
     h1,
     .h1 {
-        /* @apply text-fluid-h1 xl:text-5xl; */
-        @apply text-[28px] xl:text-[48px];
+        @apply text-3xl xl:text-6xl;
     }
         
     h2,
     .h2 {
-        /* @apply text-fluid-h2 xl:text-4xl; */
-        @apply text-[24px] xl:text-[32px];
+        @apply text-2xl xl:text-4xl;
     }
 
     h3,
     .h3 {
-        /* @apply text-fluid-h3 xl:text-3xl; */
-        @apply text-[23px] xl:text-[28px];
+        @apply text-[1.438rem] xl:text-3xl;
     }
 
     h4,
     .h4 {
-        /* @apply text-fluid-h4 xl:text-2xl; */
-        @apply text-[21px] xl:text-[24px];
+        @apply text-[1.313rem] xl:text-2xl;
     }
 
     h5,
     .h5 {
-        /* @apply text-lg xl:text-xl; */
-        @apply text-[18px] xl:text-[20px];
+        @apply text-lg xl:text-xl;
     }
 
     h6,
     .h6 {
-        /* @apply text-base xl:text-lg; */
-        @apply text-[16px] xl:text-[18px];
+        @apply text-base xl:text-lg;
     }
 
     p {

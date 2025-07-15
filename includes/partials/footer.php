@@ -2,6 +2,7 @@
     <div class="js-stagger p-2 lg:pt-3">
         <div class="container">
             <div class="max-w-[700px] mx-auto">
+
                 <?php 
                 $footer_gallery = get_field('footer_gallery', 'option');
                 if (!empty($footer_gallery)){
