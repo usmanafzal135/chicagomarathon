@@ -2654,8 +2654,8 @@ address {
   margin-right: 0.5rem;
 }
 
-.mr-\[4px\] {
-  margin-right: 4px;
+.mr-half {
+  margin-right: 0.5rem;
 }
 
 .mr-qtr {
@@ -3379,10 +3379,6 @@ address {
 .text-3xl {
   font-size: 1.78rem;
   line-height: 2.25rem;
-}
-
-.text-\[22px\] {
-  font-size: 22px;
 }
 
 .text-base {

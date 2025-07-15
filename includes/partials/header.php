@@ -4,7 +4,9 @@
     <div class="header-top hidden lg:flex flex-wrap justify-end gap-half px-3">
         <a href="#" class="button text-sm inline-flex items-center justify-center gap-x-half min-h-[2.5rem] mb-0 rounded-none border-0 bg-acent1 text-primary font-normal hover:bg-acent1 hover:shadow-none">
             EN
-            <img src="<?php bloginfo('template_url'); ?>/images/icons/translation-icon.png" width="16" alt="img" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="15.66" height="15.66" viewBox="0 0 17.27 17.062">
+                <path d="M9.527,18.664,14.1,8.874l4.569,9.79m-7.832-2.611h6.527M3,5.281a42.184,42.184,0,0,1,5.221-.323m0,0q1.462,0,2.9.1m-2.9-.1V3m2.9,2.057A15.687,15.687,0,0,1,3,15.62M11.123,5.057q1.17.08,2.32.224M9.449,12.673a15.684,15.684,0,0,1-3.33-5.049" transform="translate(-2.192 -2.4)" fill="none" stroke="#0052c2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+            </svg>
         </a>
         <?php if (get_field('is_search_button_enabled', 'option')) { ?>
             <button @click="searchOpen = ! searchOpen;" class="alpine-js search-toggle inline-flex items-center justify-center gap-x-half min-h-[2.5rem] mb-0 rounded-none font-normal border-0 bg-acent1 active mb-0 text-primary text-sm hover:bg-acent1 hover:shadow-none">
@@ -27,7 +29,9 @@
         ?>
             <a href="<?php echo $header_button['url']; ?>" class="button inline-flex items-center justify-center gap-x-half min-h-[2.5rem] text-sm font-normal mb-0 rounded-none self-center text-center no-underline hover:bg-primary" target="<?php echo $target?>">
                 <?php echo $header_button['title']?>
-                <img src="<?php bloginfo('template_url'); ?>/images/icons/user-icon-desktop.png" alt="img" width="13" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="10.66" height="13.85" viewBox="0 0 18.057 21.742">
+                    <path d="M16.543,6.047a3.91,3.91,0,0,1-4.014,3.8,3.91,3.91,0,0,1-4.014-3.8,3.91,3.91,0,0,1,4.014-3.8,3.91,3.91,0,0,1,4.014,3.8ZM4.5,20.34a7.818,7.818,0,0,1,8.028-7.593,7.82,7.82,0,0,1,8.029,7.593,20.331,20.331,0,0,1-16.057,0Z" transform="translate(-3.501 -1.25)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                </svg>
             </a>
         <?php } ?>
     </div>
@@ -38,10 +42,10 @@
             
             <div class="logo-box w-[146px] lg:w-[250px] 2xl:w-[310px]">
                 <?php if (is_front_page()) { ?>
-                    <img src="<?php bloginfo('template_url'); ?>/images/chicagomarathon-logo.png" alt="<?php echo esc_html(get_bloginfo('name')); ?>" class="max-w-full max-h-4" />
+                    <img src="<?php bloginfo('template_url'); ?>/images/logo.svg" alt="<?php echo esc_html(get_bloginfo('name')); ?>" class="max-w-full max-h-4" />
                 <?php } else { ?>
                     <a href="<?php echo home_url(); ?>" class="lg:w-5 lg:h-5">
-                        <img src="<?php bloginfo('template_url'); ?>/images/chicagomarathon-logo.png" alt="<?php echo esc_html(get_bloginfo('name')); ?>" class="max-w-full max-h-4" />
+                        <img src="<?php bloginfo('template_url'); ?>/images/logo.svg" alt="<?php echo esc_html(get_bloginfo('name')); ?>" class="max-w-full max-h-4" />
                     </a>
                 <?php } ?>
                 <?php 
@@ -73,14 +77,14 @@
                             $target = "_parent";
                         }
                 ?>
-                    <a href="<?php echo $header_button['url']; ?>" class="text-primary text-[22px] lg:hidden" target="<?php echo $target?>">
-                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                    <a href="<?php echo $header_button['url']; ?>" class="lg:hidden" target="<?php echo $target?>">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 18.057 21.742"><path d="M16.543,6.047a3.91,3.91,0,0,1-4.014,3.8,3.91,3.91,0,0,1-4.014-3.8,3.91,3.91,0,0,1,4.014-3.8,3.91,3.91,0,0,1,4.014,3.8ZM4.5,20.34a7.818,7.818,0,0,1,8.028-7.593,7.82,7.82,0,0,1,8.029,7.593,20.331,20.331,0,0,1-16.057,0Z" transform="translate(-3.501 -1.25)" fill="none" stroke="#0052c2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                     </a>  
                 <?php } ?>
 
                 <button id="menu-toggle" class="menu-toggle p-0 bg-transparent border-0 active lg:hidden mb-0 hover:bg-white text-primary" aria-label="Main menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-1.5 h-1.5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.5 8.75" class="w-1.5 h-1.5">
+                        <path d="M3.75,9h16.5M3.75,15.75h16.5" transform="translate(-2.75 -8)" fill="none" stroke="#0052c2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
                     </svg>
                     <span class="sr-only">Menu</span>
                 </button>
