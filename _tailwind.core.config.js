@@ -183,6 +183,7 @@ module.exports = {
             serif: ['Merriweather', 'serif'],
         },
         fontSize: {
+            '2xs': ['0.5rem', '0.75rem'],
             xs: ['0.687rem', '1rem'],
             sm: ['0.812rem', '1.25rem'],
             base: ['1rem', '1.5rem'], // Paragraph and H6 Mobile
