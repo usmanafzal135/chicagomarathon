@@ -10,7 +10,7 @@
     >
         <?php if ($announcement) { ?>
             <div class="flex items-start lg:items-center">
-                <img src="<?php bloginfo('template_url'); ?>/images/icons/info-icon.png" class="mr-qtr" alt="img" width="18" height="18" />
+                <img src="<?php bloginfo('template_url'); ?>/images/icons/info.svg" class="mr-qtr" alt="img" width="18" height="18" />
                 <p class="text-xs lg:text-sm lg:text-center mb-0 px-qtr"><?php echo $announcement; ?></p>
             </div>
         <?php } ?>
