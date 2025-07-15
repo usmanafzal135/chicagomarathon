@@ -44,7 +44,14 @@
                         <img src="<?php bloginfo('template_url'); ?>/images/chicagomarathon-logo.png" alt="<?php echo esc_html(get_bloginfo('name')); ?>" class="max-w-full max-h-4" />
                     </a>
                 <?php } ?>
-                <div class="text-primary text-right text-2xs lg:text-xs">October 12, 2025</div>
+                <?php 
+                $countdown_to_date = strtotime(get_field('countdown_to_date', 'option'));
+                if ( $countdown_to_date){
+                ?>
+                <div class="text-primary text-right text-2xs lg:text-xs"><?php echo  date('F j, Y', $countdown_to_date); ?></div>
+                <?php 
+                }
+                ?>
             </div>
 
             <div class="action flex items-center gap-1">

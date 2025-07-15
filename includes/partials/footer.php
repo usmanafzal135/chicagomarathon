@@ -12,7 +12,7 @@
                         ?>
                         <div class="w-[100%] md:w-auto">
                             <?php if (!empty($image['url'])): ?>
-                                <a href="<?php echo esc_url($image['url']); ?>">
+                                <a href="<?php echo esc_url($image['url']); ?>" target="_blank">
                             <?php endif; ?>
                                 <img src="<?php echo esc_url($image['sizes']['footer-logos']); ?>" class="h-[54px] mx-auto" alt="<?php echo esc_attr($image['alt']); ?>" />
                             <?php if (!empty($image['url'])): ?>
