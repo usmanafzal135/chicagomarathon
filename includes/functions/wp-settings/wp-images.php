@@ -33,6 +33,8 @@ add_image_size( 'image-carousel-thumbnail', '200', '200', true );
 add_image_size( 'medium-thumbnail', '250', '250', true ); /** Testimonials Block Thumbnail Size */
 add_image_size( 'small-thumbnail', '200', '200', false ); /** Logo Block Thumbnail Size */
 
+add_image_size( 'footer-logos', '200', '200', false ); /** Footer Logo Block Thumbnail Size */
+
 /**
  * Compress jpegs further, to accomodate google page speed/performance.
  */

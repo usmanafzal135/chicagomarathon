@@ -9,7 +9,17 @@
                 <div class="supponcers flex flex-wrap gap-x-3 gap-y-3 md:gap-y-2 justify-center items-center mb-3">
                     <?php 
                     foreach($footer_gallery as $image){
-                        echo '<div class="w-[100%] md:w-auto"><img src="'.$image['url'].'" class="h-[54px] mx-auto" alt="'.$image['alt'].'" /></div>';
+                        ?>
+                        <div class="w-[100%] md:w-auto">
+                            <?php if (!empty($image['url'])): ?>
+                                <a href="<?php echo esc_url($image['url']); ?>">
+                            <?php endif; ?>
+                                <img src="<?php echo esc_url($image['sizes']['footer-logos']); ?>" class="h-[54px] mx-auto" alt="<?php echo esc_attr($image['alt']); ?>" />
+                            <?php if (!empty($image['url'])): ?>
+                                </a>
+                            <?php endif; ?>
+                        </div>
+                    <?php
                     }
                     ?>
                 </div>
@@ -29,8 +39,6 @@
                     $copyrightText = get_field('copyright', 'option');
                     $privacy_policy_code = get_field('privacy_policy_code', 'option');
                     $privacy_policy_link = get_field('privacy_policy_link', 'option');
-                    $contactEmail = get_field('contact_email', 'option');
-                    $contactEmail = get_field('contact_email', 'option');
                     $contactEmail = get_field('contact_email', 'option');
                     $contactNumber = get_field('contact_number', 'option');
                     $contactAddress = get_field('contact_address', 'option');
@@ -52,18 +60,12 @@
 
                 <p class="js-stagger text-center text-gray-600 leading-6 mb-3">
                     <?php if ($copyrightText) { echo '&copy; ' . $copyrightText . '<br />'; } ?>
-                    <?php if ($privacy_policy_link) { echo $privacy_policy_code .' '.'<a href="'.$privacy_policy_link['url'].'" target="'.$privacy_policy_link['target'].'" class="font-semibold text-primary">Privacy notice</a>';  } ?>
+                    <?php if ($privacy_policy_link) { echo esc_html($privacy_policy_code) .' '.'<a href="'.esc_url($privacy_policy_link['url']).'" target="'.esc_attr($privacy_policy_link['target']).'" class="font-semibold text-primary">Privacy notice</a>';  } ?>
                 </p>
 
                 <p class="text-center font-semibold">
-                    <?php if ($is_file && !empty($upload_file)) { 
-                        echo '<img src="'.get_template_directory_uri().'/images/icons/pdf-icon.png" alt="img" width="24" class="mr-qtr inline-block" />';
-                        echo '<a href="#" class="text-primary underline">'.$download_button_title.'</a>';
-                     } elseif (!$is_file && $file_url) {
-                        echo '<img src="'.get_template_directory_uri().'/images/icons/pdf-icon.png" alt="img" width="24" class="mr-qtr inline-block" />';
-                        echo '<a href="'.$file_url.'" class="text-primary underline">'.$download_button_title.'</a>';
-                     }
-                     ?>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/icons/pdf-icon.png" alt="img" width="24" class="mr-qtr inline-block" />
+                    <a href="#" class="text-primary underline">Download Acrobat Reader</a>
                 </p>
             </div>
         </div>
