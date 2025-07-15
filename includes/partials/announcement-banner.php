@@ -27,7 +27,7 @@
             $link_title = $link['title'];
             $link_target = $link['target'] ? $link['target'] : '_self';
         ?>
-            <a class="button hollow !border-white !text-white !text-xs mb-0 mt-[12px] md:mt-0 md:ml-2 text-center" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+            <a class="text-primary font-semibold underline" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
         <?php } ?>
 
         <button 

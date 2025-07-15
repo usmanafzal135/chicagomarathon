@@ -1,5 +1,9 @@
 <div class="js-hidden header z-10 relative py-1 sm:py-half">
 
+<?php 
+$top_header = get_field('top_header', 'option');
+if ($top_header){
+?>
     <!-- Header Top -->
     <div class="header-top hidden lg:flex flex-wrap justify-end gap-half px-2">
         <a href="#" class="button inline-flex items-center gap-half mb-0 rounded-none border-0 bg-acent1 text-primary font-normal hover:bg-acent1 hover:shadow-none">
@@ -28,16 +32,21 @@
             <a href="<?php echo $header_button['url']; ?>" class="button font-normal mb-0 rounded-none self-center text-center no-underline hover:bg-primary" target="<?php echo $target?>"><?php echo $header_button['title']?></a>  
         <?php } ?>
     </div>
-
+<?php
+}
+?>
     <!-- Header (logo & navigation) -->
     <div class="flex flex-col lg:flex-row lg:px-2">
         <div class="lg:shrink flex items-center justify-between mb-0 px-1 lg:px-0">
             
-            <?php if (is_front_page()) { ?>
-                <img src="<?php bloginfo('template_url'); ?>/images/chicagomarathon-logo.png" alt="<?php echo esc_html(get_bloginfo('name')); ?>" class="w-[160px] sm:w-[250px] lg:w-[310px]" />
-            <?php } else { ?>
+            <?php
+            $header_logo = get_field('header_logo', 'option');
+            if (is_front_page() && $header_logo) { 
+                ?>
+                <img src="<?php echo $header_logo['url']; ?>" alt="<?php echo esc_html(get_bloginfo('name')); ?>" class="w-[160px] sm:w-[250px] lg:w-[310px]" />
+            <?php } elseif($header_logo) { ?>
                 <a href="<?php echo home_url(); ?>" class="lg:w-5 lg:h-5">
-                    <img src="<?php bloginfo('template_url'); ?>/images/chicagomarathon-logo.png" alt="<?php echo esc_html(get_bloginfo('name')); ?>" class="w-[160px] sm:w-[250px] lg:w-[310px]" />
+                    <img src="<?php echo $header_logo['url']; ?>" alt="<?php echo esc_html(get_bloginfo('name')); ?>" class="w-[160px] sm:w-[250px] lg:w-[310px]" />
                 </a>
             <?php } ?>
 

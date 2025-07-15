@@ -21,6 +21,53 @@
             "selected": 0
         },
         {
+            "key": "field_68752ec93076c",
+            "label": "Top Header",
+            "name": "top_header",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Adds a call to action button to the header.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_68752cc9b6c7f",
+            "label": "Header Logo",
+            "name": "header_logo",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Adds a call to action button to the header.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "medium"
+        },
+        {
             "key": "field_5ffbce487cf5f",
             "label": "Header Button",
             "name": "header_button",
@@ -264,8 +311,8 @@
         },
         {
             "key": "field_6874ddeb57ed8",
-            "label": "Download File",
-            "name": "download_file",
+            "label": "Upload File",
+            "name": "upload_file",
             "aria-label": "",
             "type": "file",
             "instructions": "",
@@ -522,5 +569,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1752492576
+    "modified": 1752510271
 }
