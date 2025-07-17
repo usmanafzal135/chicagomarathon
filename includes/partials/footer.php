@@ -2,18 +2,17 @@
     <div class="js-stagger p-2 lg:pt-3">
         <div class="container">
             <div class="max-w-[700px] mx-auto">
-
                 <?php 
                 $footer_gallery = get_field('footer_gallery', 'option');
                 if (!empty($footer_gallery)){
                 ?>
-                <div class="supponcers flex flex-wrap gap-x-3 gap-y-3 md:gap-y-2 justify-center items-center mb-3">
+                <div class="sponsors flex flex-wrap gap-x-3 gap-y-3 md:gap-y-2 justify-center items-center mb-3">
                     <?php 
                     foreach($footer_gallery as $image){
                         ?>
                         <div class="w-[100%] md:w-auto">
                             <?php if (!empty($image['url'])): ?>
-                                <a href="<?php echo esc_url($image['url']); ?>" target="_blank">
+                                <a href="<?php echo esc_url($image['url']); ?>" target="_blank" rel="noopener">
                             <?php endif; ?>
                                 <img src="<?php echo esc_url($image['sizes']['footer-logos']); ?>" class="h-[54px] mx-auto" alt="<?php echo esc_attr($image['alt']); ?>" />
                             <?php if (!empty($image['url'])): ?>
@@ -44,17 +43,13 @@
                     $contactNumber = get_field('contact_number', 'option');
                     $contactAddress = get_field('contact_address', 'option');
                     $contactInfo = get_field('contact_information', 'option');
-                    $download_button_title = get_field('download_button', 'option');
-                    $is_file = get_field('is_file', 'option');
-                    $upload_file = get_field('upload_file', 'option');
-                    $file_url = get_field('file_url', 'option');
                 ?>
 
                 <div class="js-stagger text-center mb-2">
                     <?php if ($contactAddress) { echo '<address class="mb-1">' . $contactAddress . '</address>' ; } ?>
                     <?php if ($contactEmail) { echo '<p>Email: <a class="text-primary-dark hover:text-primary" href="mailto:' . $contactEmail . '">' . $contactEmail . '</a></p>' ; } ?>
                     <?php if ($contactNumber) { echo '<p>Phone: <a class="text-primary-dark hover:text-primary" href="tel:' . $contactNumber . '">' . $contactNumber . '</a></p>' ; } ?>
-                    <?php if ($contactInfo) { echo '<div class="mb-1">' . $contactInfo . '</div>' ; } ?>
+                    <?php if ($contactInfo) { echo '<div class="text-center text-secondary font-normal mb-3 text-xl">' . $contactInfo . '</div>' ; } ?>
                 </div>
 
                 <?php get_template_parts(array('includes/partials/social-links')); ?>

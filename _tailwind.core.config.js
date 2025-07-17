@@ -183,12 +183,12 @@ module.exports = {
             serif: ['Merriweather', 'serif'],
         },
         fontSize: {
-            '2xs': ['0.5rem', '0.75rem'],
             xs: ['0.687rem', '1rem'],
             sm: ['0.812rem', '1.25rem'],
             base: ['1rem', '1.5rem'], // Paragraph and H6 Mobile
             lg: ['1.125rem', '1.75rem'],
             xl: ['1.25rem', '1.75rem'],
+            '2xs': ['0.5rem', '0.75rem'],
             '2xl': ['1.5rem', '2rem'],
             '3xl': ['1.78rem', '2.25rem'],
             '4xl': ['2rem', '2.75rem'],
@@ -254,7 +254,6 @@ module.exports = {
                             marginTop: theme('spacing.half'),
                             marginBottom: theme('spacing.1'),
                         },
-                        // If 1rem = 16px
                         'h1, .h1': {
                             fontSize: '3rem', // 48px
                             '@screen xl': {

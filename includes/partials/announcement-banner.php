@@ -10,18 +10,20 @@
     >
         <?php if ($announcement) { ?>
             <div class="flex items-start lg:items-center">
-                <img src="<?php bloginfo('template_url'); ?>/images/icons/info.svg" class="mr-qtr" alt="img" width="18" height="18" />
-                <p class="text-xs lg:text-sm lg:text-center mb-0 px-qtr"><?php echo $announcement; ?></p>
+                <img src="<?php bloginfo('template_url'); ?>/images/icons/info.svg" class="mr-qtr" alt="Information" width="18" height="18" />
+                <p class="text-xs lg:text-sm lg:text-center mb-0 px-qtr"><?php echo $announcement; ?>
+                <?php if ($link) { 
+                    $link_url = $link['url'];
+                    $link_title = $link['title'];
+                    $link_target = $link['target'] ? $link['target'] : '_self';
+                ?>
+                    <a class="text-primary font-semibold underline" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                <?php } ?>
+            </p>
             </div>
         <?php } ?>
 
-        <?php if ($link) { 
-            $link_url = $link['url'];
-            $link_title = $link['title'];
-            $link_target = $link['target'] ? $link['target'] : '_self';
-        ?>
-            <a class="text-primary font-semibold underline" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
-        <?php } ?>
+        
 
         <button 
             x-on:click="open = ! open"
