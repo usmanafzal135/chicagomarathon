@@ -16,16 +16,6 @@
         </nav>
 
         <div class="flex items-center" :class="!navOpen ? 'max-lg:hidden max-lg:invisible' : ''">
-
-            <!-- <?php if (get_field('is_search_button_enabled', 'option')) { ?>
-                <button @click="searchOpen = ! searchOpen;" class="alpine-js search-toggle hidden lg:block bg-transparent border-0 active mb-0 py-half px-qtr lg:ml-1  hover:bg-transparent hover:text-primary-dark hover:shadow-transparent text-primary">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-1.5 h-1.5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"></path>
-                    </svg>
-                    <span class="sr-only">Search the site</span>
-                </button>
-            <?php } ?> -->
-
             
                 <?php if (get_field('header_button', 'option')) { 
                     $header_button = get_field('header_button', 'option');
