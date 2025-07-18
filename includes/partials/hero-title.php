@@ -21,8 +21,21 @@
 			<h1 class="js-stagger">Archive</h1>
 		<?php } ?>
 	<?php } ?>
+<?php } elseif(is_front_page()) { ?>
+	<?php if ( get_field( 'hero_tagline' ) ) { ?>
+		<p class="js-stagger text-white"><?php echo get_field( 'hero_tagline' ); ?></p>
+	<?php } ?>
+	<h1 class="js-stagger h2 md:h1 !text-white leading-[1.2]">
+		<?php
+		if ( get_field( 'hero_title' ) ) {
+			echo get_field( 'hero_title' );
+		} else {
+			the_title();
+		}
+		?>
+	</h1>
 <?php } else { ?>
-	<h1 class="js-stagger h2 md:h1 !text-white">
+	<h1 class="js-stagger h2 md:h1 !text-white leading-[1.2]">
 		<?php
 		if ( get_field( 'hero_title' ) ) {
 			echo get_field( 'hero_title' );
