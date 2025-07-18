@@ -1,5 +1,6 @@
-<svg version="1.1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
-<path fill="#008066" d="M15.2,8.1c0,0.7-0.1,1.2-0.7,1.2H9.3v5.2c0,0.7-0.5,0.7-1.2,0.7s-1.2-0.1-1.2-0.7V9.3H1.7
-	C1,9.3,1,8.7,1,8.1S1,6.9,1.7,6.9h5.2V1.7C6.9,1,7.4,1,8.1,1S9.3,1,9.3,1.7v5.2h5.2C15.1,6.9,15.2,7.4,15.2,8.1z"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="17.2" height="17.2" viewBox="0 0 17.2 17.2">
+  <g id="Icon_feather-plus" data-name="Icon feather-plus" transform="translate(0.6 0.6)">
+    <path id="Path_104" data-name="Path 104" d="M18,7.5v16" transform="translate(-10 -7.5)" fill="none" stroke="#0052c2" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.2"/>
+    <path id="Path_105" data-name="Path 105" d="M7.5,18h16" transform="translate(-7.5 -10)" fill="none" stroke="#0052c2" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.2"/>
+  </g>
 </svg>

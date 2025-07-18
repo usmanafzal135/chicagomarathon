@@ -62,8 +62,8 @@
                             <?php while ( have_rows('accordion_items') ) { the_row(); ?>
                                 <li class="inline-block">
                                     <a href="#"
-                                        :class="{ 'active bg-gray-100 border-b-4 border-primary': tab === 'tab-<?php echo $accordion_count; ?>' }"
-                                        class="inline-block py-0.75 px-1 lg:px-1.5 xl:py-1 font-bold lg:text-lg text-primary-dark hover:text-primary-dark cursor-pointer"
+                                        :class="{ 'active border-b-4 border-primary': tab === 'tab-<?php echo $accordion_count; ?>' }"
+                                        class="inline-block !leading-[1.15] py-0.75 px-1 lg:px-1.25 xl:py-1 font-bold lg:text-lg text-primary cursor-pointer"
                                         @click.prevent="tab = 'tab-<?php echo $accordion_count; ?>'"
                                         >
                                             <?php echo get_sub_field('title'); ?>
@@ -79,7 +79,7 @@
                                 x-show="tab === 'tab-<?php echo $accordion_inside_count; ?>'"
                                 id="accordion-tabs-content-{<?php echo get_row_index(); ?>}"
                             >
-                                <div class="typography max-w-full pt-half lg:pt-1 pb-1.5 lg:pb-2 pr-2">
+                                <div class="typography max-w-full pt-half lg:pt-1 pb-1.5 lg:pb-2 lg:pr-2">
                                     <?php echo get_sub_field('content'); ?>
                                 </div>
                             </div>
@@ -109,7 +109,7 @@
                                 role="button"
                             >
                                 
-                                <h3 class="text-base lg:text-lg mb-0 text-primary group-hover:text-primary-dark pr-3">
+                                <h3 class="text-base lg:text-lg mb-0 text-secondary pr-3">
                                     <?php echo get_sub_field('title'); ?>
                                 </h3>
 
